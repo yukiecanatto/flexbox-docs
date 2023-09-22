@@ -50,9 +50,11 @@ p {
     text-align: justify;
 }
 
+
 td, th {
     font-size: 16pt;
 }
+
 
 tr:nth-child(odd) {
     background-color: #cecece;
@@ -76,6 +78,16 @@ tr:nth-child(odd) {
 
 }
 
+.contido-inherit {
+    width: 30px;
+    height: 30px;
+    background-color: aqua;
+    border: 2px solid #0000ff;
+    
+}
+
+
+
 .display-flex {
     display:flex
 
@@ -89,7 +101,32 @@ tr:nth-child(odd) {
     justify-content: flex-start;
 }
 
-.flex-direction {
+.justify-content-flex-end {
+    justify-content: flex-end;
+}
+
+.justify-content-space-between {
+    justify-content: space-between;
+}
+
+.justify-content-space-around {
+    justify-content: space-around;
+}
+
+.justify-content-space-evenly {
+    justify-content: space-evenly;
+}
+
+.justify-content-initial {
+    justify-content: initial;
+}
+
+.justify-content-inherit {
     display: flex;
+    justify-content: inherit;
+}
+
+
+.flex-direction-row-reverse {
     flex-direction: row-reverse;
 }

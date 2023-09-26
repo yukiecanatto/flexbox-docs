@@ -21,7 +21,7 @@
 
     </p>
 
-    <p>Exêmplo</p>
+    <p>Exemplo</p>
 
     <!-- Abreviação Emmet: div.container  -->
     <!-- duas estilizações dentro de uma classe, só no HTML. Em CSS ele entende diferente como descendência -->
@@ -67,7 +67,7 @@
         O valor "center" vai alinhar o conteúdo ao centro do eixo primário.
     </p>
 
-    <p>Exêmplo:</p>
+    <p>Exemplo:</p>
     <div class="conteiner display-flex justify-content-center">
         <div class="contido"></div>
         <div class="contido"></div>
@@ -79,7 +79,7 @@
     <h4>flex-start</h4>
     <p class="descricao-propriedade">Defaut da flex-direction para dispor os elementos, da esquerda para a direita.</p>
 
-    <p>Exêmplo:</p>
+    <p>Exemplo:</p>
     
     <div class="conteiner display-flex justify-content-flex-start">
         <div class="contido"></div>
@@ -93,7 +93,7 @@
     <h4>flex-end</h4>
     <p class="descricao-propriedade">Os itens contidos na div são dispostos no lado oposto ao Defaut, no caso são dispostos do lado direito do conteiner, quando o padrão seria pela esquerda.</p>
 
-    <p>Exêmplo:</p>
+    <p>Exemplo:</p>
 
     <div class="conteiner display-flex justify-content-flex-end">
         <div class="contido"></div>
@@ -107,7 +107,7 @@
     <h4>space-between</h4>
     <p class="descricao-propriedade">Os itens contidos na div são dispostos com um espaço entre cada um deles. No caso os quadrados contidos na div são exibidos com um espaço entre eles, mas não espaço da margem. Note que os quadrados das pontas estão praticamente colados nos cantos.</p>
 
-    <p>Exêmplo:</p>
+    <p>Exemplo:</p>
 
     <div class="conteiner display-flex justify-content-space-between">
         <div class="contido"></div>
@@ -121,7 +121,7 @@
     <h4>space-around</h4>
     <p class="descricao-propriedade">Os itens contidos na div são dispostos de maneira semelhante à propriedade space-between, porém com o diferêncial do espaço entre os objetos ser no total entorno dele. Diferênte de space-between que não espaça os objetos da margem ou do canto da tela, space-around garante o espaço da antes e depois do objeto, ou seja vai ter os espaços entre os quadradinhos, mas com as pontas descoladas dos cantos.</p>
 
-    <p>Exêmplo:</p>
+    <p>Exemplo:</p>
 
     <div class="conteiner display-flex justify-content-space-around">
         <div class="contido"></div>
@@ -133,9 +133,9 @@
     
     
     <h4>space-evenly</h4>
-    <p class="descricao-propriedade">Essa propriedade é o aprimoramento das outras duas anteriores por assim dizer. Pois dispões os objetos dentro da div espaçados de maneira igual, o mesmo espaço entre cada item, será o mesmo o espaço entre as pontas e a borda/margem/canto da tela/final do monitor! Vamos ao exêmplo.</p>
+    <p class="descricao-propriedade">Essa propriedade é o aprimoramento das outras duas anteriores por assim dizer. Pois dispões os objetos dentro da div espaçados de maneira igual, o mesmo espaço entre cada item, será o mesmo o espaço entre as pontas e a borda/margem/canto da tela/final do monitor! Vamos ao Exemplo.</p>
 
-    <p>Exêmplo:</p>
+    <p>Exemplo:</p>
 
     <div class="conteiner display-flex justify-content-space-evenly">
         <div class="contido"></div>
@@ -149,7 +149,7 @@
     <h4>initial</h4>
     <p class="descricao-propriedade">A propriedade initial aponta ao Default da propriedade Flex, a qual por padrão segue a direção flex-start, ou seja os itens serão posicionados no caso da esquerda para a direita.</p>
 
-    <p>Exêmplo:</p>
+    <p>Exemplo:</p>
 
     <div class="conteiner display-flex justify-content-initial">
         <div class="contido"></div>
@@ -163,7 +163,7 @@
     <h4>inherit</h4>
     <p class="descricao-propriedade">Os itens contidos na div herdarão as características da sua classe pai. No caso o alinhamento começando pela direita.</p>
 
-    <p>Exêmplo:</p>
+    <p>Exemplo:</p>
 
     <div class="conteiner display-flex justify-content-flex-end">
         <div class="contido"></div>
@@ -193,24 +193,6 @@
     <p class="descricao-popriedade">
         A propriedade flex-direction permite que você escolha a direção do alinhamento o qual serão dispostos os elementos dentro da div. Lembrando que o elemento deve ser conter a propriedade display-flex, do contário a propriedade flex direction, não surte efeito algum.
     </p>
-
-    <h4>row</h4>
-
-
-    <h4>row-reverse</h4>
-    <p class="descricao-propriedade">
-        Repare que as caixinhas, além de terem sido alinhadas à direita, também iniciaram a contagem da direita para a esquerda. Isso se deve a utilização do valor 'row-reverse', o qual dispôs os elementos reversamente, porém a propriedade pode ser usada da maneira que for melhro ao projeto, da esquerda para a direita, direita para a esquerda, de cima para baixo, e de baixo para cima à sua escolha
-    </p>
-
-    <p>Exêmplo:</p>
-
-    <div class="conteiner display-flex flex-direction-row-reverse">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-        <div class="contido">5</div>
-    </div>
 
     <table>
         <caption>Valores padrão das propriedades do flex-direction</caption>
@@ -245,7 +227,162 @@
         </tr>
     </table>
 
-    <h3>align-itens</h3>
+
+    <h4>row</h4>
+    <p class="descricao-popriedade">
+        A propriedade padrão da flex-direction, dispondo os elementos em linha da esquerda para a direita.
+    </p>
+
+    <p>Exemplo:</p>
+
+    <div class="conteiner display-flex flex-direction-row">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
+    </div>
+
+
+    <h4>row-reverse</h4>
+    <p class="descricao-propriedade">
+        Repare que as caixinhas, além de terem sido alinhadas à direita, também iniciaram a contagem da direita para a esquerda. Isso se deve a utilização do valor 'row-reverse', o qual dispôs os elementos reversamente, porém a propriedade pode ser usada da maneira que for melhro ao projeto, da esquerda para a direita, direita para a esquerda, de cima para baixo, e de baixo para cima à sua escolha
+    </p>
+
+    <p>Exemplo:</p>
+
+    <div class="conteiner display-flex flex-direction-row-reverse">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
+    </div>
+    
+    
+    <h4>Column</h4>
+    <p class="descricao-propriedade">
+        A propriedade column alinha os elementos contidos na div em coluna de cima para baixo.
+    </p>
+
+    <p>Exemplo:</p>
+
+    <div class="conteiner display-flex flex-direction-column">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
+    </div>
+    
+    
+    <h4>Column-reverse</h4>
+    <p class="descricao-propriedade">
+        A propriedade column-reverse também alinha os elementos contidos na div em coluna, mas dispondo os elementos em reverso, ou seja de baixo para cima.
+    </p>
+
+    <p>Exemplo:</p>
+
+    <div class="conteiner display-flex flex-direction-column-reverse">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
+    </div>
+    
+    
+    <h3>Align-items</h3>
+    <p class="descricao-propriedade">
+        A propriedade align-items alinha os elementos na div verticalmente. 
+    </p>
+    
+    <h4>Normal e Stretch</h4>
+    <p class="descricao-propriedade">
+        Ambas as propriedades agem da mesma forma em relação aos elementos contidos na div, esticando os elementos para ocupar todo o espaço do conteiner. 
+    </p>
+
+    <p>Exemplo:</p>
+
+    <div class="conteiner display-flex">
+        <div class="contido align-items-stretch"></div>
+        <div class="contido align-items-stretch"></div>
+        <div class="contido align-items-stretch"></div>
+        <div class="contido align-items-stretch"></div>
+        <div class="contido align-items-stretch"></div>
+    </div>
+    
+    
+    <h4>Center</h4>
+    <p class="descricao-propriedade">
+        Os elementos são alinhados ao centro do eixo vertical da div.
+    </p>
+
+    <p>Exemplo:</p>
+
+    <div class="conteiner display-flex align-items-center">
+        <div class="contido-tamanho-1"></div>
+        <div class="contido-tamanho-2"></div>
+        <div class="contido-tamanho-3"></div>
+        <div class="contido-tamanho-4"></div>
+        <div class="contido-tamanho-5"></div>
+        
+    </div>
+    
+    
+    <h4>Flex-start</h4>
+    <p class="descricao-propriedade">
+        Os elementos são alinhados ao topo do conteiner.
+    </p>
+
+    <p>Exemplo:</p>
+
+    <div class="conteiner display-flex align-items-flex-start">
+        <div class="contido-tamanho-1"></div>
+        <div class="contido-tamanho-2"></div>
+        <div class="contido-tamanho-3"></div>
+        <div class="contido-tamanho-4"></div>
+        <div class="contido-tamanho-5"></div>
+        
+    </div>
+    
+    
+    <h4>Flex-end</h4>
+    <p class="descricao-propriedade">
+        Os elementos são alinhados ao final do conteiner, literalmente na ultima linha do fundo.
+    </p>
+
+    <p>Exemplo:</p>
+
+    <div class="conteiner display-flex align-items-flex-end">
+        <div class="contido-tamanho-1"></div>
+        <div class="contido-tamanho-2"></div>
+        <div class="contido-tamanho-3"></div>
+        <div class="contido-tamanho-4"></div>
+        <div class="contido-tamanho-5"></div>
+        
+    </div>
+    
+    
+    <h4>Baseline</h4>
+    <p class="descricao-propriedade">
+        Os elementos são alinhados sobre a linha central do conteiner. 
+    </p>
+
+    <p>Exemplo:</p>
+
+    <div class="conteiner display-flex align-items-baseline">
+        <div class="contido-tamanho-1"></div>
+        <div class="contido-tamanho-2"></div>
+        <div class="contido-tamanho-3"></div>
+        <div class="contido-tamanho-4"></div>
+        <div class="contido-tamanho-5"></div>
+        
+        
+    </div>
+
+
+
     <h3>flex-wrap</h3>
     <h3>flex-flow</h3>
     <h3>align-content</h3>

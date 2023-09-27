@@ -73,16 +73,37 @@ tr:nth-child(odd) {
 .contido {
     width: 100px;
     height: 100px;
-    background-color: aqua;
-    border: 5px solid #0000ff;
+    border: 2px solid #000000;
+    border-radius: 20%;
+    
+}
 
+.contido:nth-child(5n+1) {
+    background-color: #ff0000;
+}
+
+.contido:nth-child(5n+2) {
+    background-color: #00ff00;
+}
+
+.contido:nth-child(5n+3) {
+    background-color: #0000ff;
+}
+
+.contido:nth-child(5n+4) {
+    background-color: #ff7b00;
+}
+
+.contido:nth-child(5n+5) {
+    background-color: #8600a4;
 }
 
 .contido-inherit {
     width: 30px;
     height: 30px;
     background-color: aqua;
-    border: 2px solid #0000ff;
+    border: 2px solid #ffffff;
+    border-radius: 20%;
     
 }
 
@@ -108,7 +129,7 @@ tr:nth-child(odd) {
     height: 100px;
     background-color: aqua;
     border: 5px solid #0000ff;
-
+    
 }
 
 .contido-tamanho-4 {
@@ -116,7 +137,7 @@ tr:nth-child(odd) {
     height: 125px;
     background-color: aqua;
     border: 5px solid #0000ff;
-
+    
 }
 
 .contido-tamanho-5 {
@@ -128,9 +149,11 @@ tr:nth-child(odd) {
 }
 
 
+
+
 .display-flex {
     display:flex
-
+    
 }
 
 
@@ -212,3 +235,24 @@ tr:nth-child(odd) {
     align-items: baseline;
 }
 
+
+
+/* flex-wrap */
+.flex-wrap-nowrap {
+    flex-wrap: nowrap;
+}
+
+.flex-wrap-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-wrap-wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+
+
+
+/* flex-flow */
+.flex-flow-row-reverse-wrap {
+    flex-flow: row-reverse wrap;
+}

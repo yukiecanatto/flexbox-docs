@@ -52,12 +52,16 @@
             <td class="valor">flex-start</td>
         </tr>
         <tr>
-            <td class="propriedade">align-content</td>
+            <td class="propriedade">align-items</td>
             <td class="valor">flex-start</td>
         </tr>
     </table>
+    
 
-    <h3>justify-content: center</h3>
+    
+    
+    
+    <h3>justify-content</h3>
     <p class="descricao-propriedade">
         A propriedade justify-content pode ser usada para justificar o conteúdo do elemento primário, ou seja, eixo X(row, row-reverse), ou eixo Y (column, column-reverse).
     </p>
@@ -292,6 +296,10 @@
     </div>
     
     
+    
+    
+    
+    
     <h3>Align-items</h3>
     <p class="descricao-propriedade">
         A propriedade align-items alinha os elementos na div verticalmente. 
@@ -381,11 +389,208 @@
         
     </div>
 
+    
+
 
 
     <h3>flex-wrap</h3>
+    <p class="descricao-propriedade">
+        A propriede flex-wrap permite a cofiguração se os itens contidos na div devem ou não ser agrupados. O que os faram se agruparem de um lado ou outro, uma vez atingido o limite do conteiner, a próxima linha ou coluna começará logo ao lado.
+    </p>
+
+    <table>
+        <caption>Valores aceitos pela propriedade flex-wrap</caption>
+
+        <tr>
+            <th class="popriedade">Propriedade</th>
+            <th class="valor">Valor</th>
+        </tr>
+        <tr>
+            <th class="popriedade">flex-wrap</th>
+            <th class="valor">nowrap</th>
+        </tr>
+        <tr>
+            <td class="propriedade"></td>
+            <td class="valor">wrap</td>
+        </tr>
+        <tr>
+            <td class="propriedade"></td>
+            <td class="valor">wrap-reverse</td>
+        </tr>
+        <tr>
+            <td class="propriedade"></td>
+            <td class="valor">initial</td>
+        </tr>
+        <tr>
+            <td class="propriedade"></td>
+            <td class="valor">inherit</td>
+        </tr>
+    </table>
+
+
+    <h4>nowrap</h4>
+    <p class="descricao-propriedade">
+        O valor nowrap vem como padrão e indica que os elementos contido na div não serã agrupados. Ou seja com ou sem esse valor definido, por padrão os elementos contidos no conteiner não se agrupam. 
+    </p>
+
+    <p>Exemplo:</p>
+
+    <div class="conteiner display-flex flex-wrap-nowrap">
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        
+        
+    </div>
+    
+    
+    <h4>wrap</h4>
+    <p class="descricao-propriedade">
+        O valor wrap agrupa os elementos contido na div, quebrando a linha quando necessário, ao atingir o limite do conteiner. 
+    </p>
+
+    <p>Exemplo:</p>
+
+    <div class="conteiner display-flex flex-wrap-wrap">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
+        <div class="contido">6</div>
+        <div class="contido">7</div>
+        <div class="contido">8</div>
+        <div class="contido">9</div>
+        <div class="contido">10</div>
+        <div class="contido">11</div>
+        <div class="contido">12</div>
+        <div class="contido">13</div>
+        <div class="contido">14</div>
+        <div class="contido">15</div>      
+        
+    </div>
+    
+    
+    <h4>wrap-reverse</h4>
+    <p class="descricao-propriedade">
+        O valor wrap-reverse agrupa os elementos contido na div em ordem reversa, quebrando a linha quando necessário . 
+    </p>
+
+    <div class="conteiner display-flex flex-wrap-wrap-reverse">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
+        <div class="contido">6</div>
+        <div class="contido">7</div>
+        <div class="contido">8</div>
+        <div class="contido">9</div>
+        <div class="contido">10</div>
+        <div class="contido">11</div>
+        <div class="contido">12</div>
+        <div class="contido">13</div>
+        <div class="contido">14</div>
+        <div class="contido">15</div>      
+        
+    </div>
+
+
+
+
+
+    
     <h3>flex-flow</h3>
+    <p class="descricao-propriedade">
+        A propriedade flex-flow é uma abreviação que engloba duas outras propriedades do flexbox, flex-direction e flex-wrap, o qual podem ser declaradas numa unica propriedade, pois o flex-flow aceita os dois valores das propriedades, uma ao lado da outra com um espaço entre elas. Note que esse shorthand somente é interessante com o uso do wrap, pois por padrão os elementos já são dispostos com nowrap, ou seja eles não serão agrupados em direção alguma.
+    </p>
+
+    <table>
+        <caption>Valores aceitos pela propriedade flex-flow</caption>
+
+        <tr>
+            <th class="popriedade">Propriedade</th>
+            <th class="valor">Valor</th>
+        </tr>
+        <tr>
+            <th class="popriedade">flex-direction</th>
+            <th class="valor">row</th>
+        </tr>
+        <tr>
+            <td class="propriedade"></td>
+            <td class="valor">row-reverse</td>
+        </tr>
+        <tr>
+            <td class="propriedade"></td>
+            <td class="valor">column</td>
+        </tr>
+        <tr>
+            <td class="propriedade"></td>
+            <td class="valor">column-reverse</td>
+        </tr>
+        <tr>
+            <td class="propriedade"></td>
+            <td class="valor">initial</td>
+        </tr>
+        <tr>
+            <td class="propriedade"></td>
+            <td class="valor">inherit</td>
+        </tr>
+        <tr>
+            <td class="propriedade">fle-wrap</td>
+            <td class="valor">nowrap</td>
+        </tr>
+        <tr>
+            <td class="propriedade"></td>
+            <td class="valor">wrap</td>
+        </tr>
+        <tr>
+            <td class="propriedade"></td>
+            <td class="valor">wrap-reverse</td>
+        </tr>
+        <tr>
+            <td class="propriedade"></td>
+            <td class="valor">initial</td>
+        </tr>
+        <tr>
+            <td class="propriedade"></td>
+            <td class="valor">inherit</td>
+        </tr>
+    </table>
+
+    <p>Exemplo:</p>
+
+    <p>flex-flow: row-reverse wrap</p>
+
+    <div class="conteiner display-flex flex-flow-row-reverse-wrap">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
+        <div class="contido">6</div>
+        <div class="contido">7</div>
+        <div class="contido">8</div>
+        <div class="contido">9</div>
+        <div class="contido">10</div>
+        <div class="contido">11</div>
+        <div class="contido">12</div>
+        <div class="contido">13</div>
+        <div class="contido">14</div>
+        <div class="contido">15</div> 
+        
+        
+    </div>
+
+    
+    
+
+
+
     <h3>align-content</h3>
+    
 
 
 

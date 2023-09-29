@@ -329,11 +329,11 @@
     <p>Exemplo:</p>
 
     <div class="conteiner display-flex align-items-center">
-        <div class="contido-tamanho-1"></div>
-        <div class="contido-tamanho-2"></div>
-        <div class="contido-tamanho-3"></div>
-        <div class="contido-tamanho-4"></div>
-        <div class="contido-tamanho-5"></div>
+        <div class="contido" style="height: 25px;"></div>
+        <div class="contido" style="height: 50px;"></div>
+        <div class="contido" style="height: 100px;"></div>
+        <div class="contido" style="height: 150px;"></div>
+        <div class="contido" style="height: 200px;"></div>
         
     </div>
     
@@ -346,11 +346,11 @@
     <p>Exemplo:</p>
 
     <div class="conteiner display-flex align-items-flex-start">
-        <div class="contido-tamanho-1"></div>
-        <div class="contido-tamanho-2"></div>
-        <div class="contido-tamanho-3"></div>
-        <div class="contido-tamanho-4"></div>
-        <div class="contido-tamanho-5"></div>
+        <div class="contido" style="height: 25px;"></div>
+        <div class="contido" style="height: 50px;"></div>
+        <div class="contido" style="height: 100px;"></div>
+        <div class="contido" style="height: 150px;"></div>
+        <div class="contido" style="height: 200px;"></div>
         
     </div>
     
@@ -363,11 +363,11 @@
     <p>Exemplo:</p>
 
     <div class="conteiner display-flex align-items-flex-end">
-        <div class="contido-tamanho-1"></div>
-        <div class="contido-tamanho-2"></div>
-        <div class="contido-tamanho-3"></div>
-        <div class="contido-tamanho-4"></div>
-        <div class="contido-tamanho-5"></div>
+        <div class="contido" style="height: 25px;"></div>
+        <div class="contido" style="height: 50px;"></div>
+        <div class="contido" style="height: 100px;"></div>
+        <div class="contido" style="height: 150px;"></div>
+        <div class="contido" style="height: 200px;"></div>
         
     </div>
     
@@ -380,11 +380,11 @@
     <p>Exemplo:</p>
 
     <div class="conteiner display-flex align-items-baseline">
-        <div class="contido-tamanho-1"></div>
-        <div class="contido-tamanho-2"></div>
-        <div class="contido-tamanho-3"></div>
-        <div class="contido-tamanho-4"></div>
-        <div class="contido-tamanho-5"></div>
+        <div class="contido" style="height: 25px;"></div>
+        <div class="contido" style="height: 50px;"></div>
+        <div class="contido" style="height: 100px;"></div>
+        <div class="contido" style="height: 150px;"></div>
+        <div class="contido" style="height: 200px;"></div>
         
         
     </div>
@@ -590,15 +590,134 @@
 
 
     <h3>align-content</h3>
-    <p class="descricao-propriedade">A propriedade align-content controla o espaçamento entre as linhas do conteudo na div.</p>
+    <p class="descricao-propriedade">A propriedade align-content comanda o alinhamento do conteudo na div com o uso de wrap, no eixo transversal em relação ao eixo principal. Que no caso pode variar entre horizontal e vertical, a depender do alinhamento da flex-direction, sendo o padrão row(linha), ele espaçará entre as linhas, porém se o alinhamento for em coluna, ele alinhará entre as colunas.</p>
 
     <h4>stretch</h4>
+    <p class="descricao-propriedade">
+        O valor stretch nesta propriedade esticará os elementos até o fim do conteiner. 
+    </p>
+
+    <p>Exemplo:</p>
+
+    <div class="conteiner display-flex align-content-stretch">
+        <div class="contido" style="height: auto;"></div>
+        <div class="contido" style="height: auto;"></div>
+        <div class="contido" style="height: auto;"></div>
+        <div class="contido" style="height: auto;"></div>
+        <div class="contido" style="height: auto;"></div>
+            
+        
+    </div>
+
+
+
     <h4>center</h4>
+    <p class="descricao-propriedade">
+        O valor center centraliza o conteudo em relaçaõ ao eixo principal. Funciona unicamente com a propriedade wrap. 
+    </p>
+
+    <p>Exemplo:</p>
+
+    <div class="conteiner display-flex align-content-center">
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        
+        
+    </div>
+
+
     <h4>flex-start</h4>
+    <p class="descricao-propriedade">
+        O valor start alinha os elementos no inicio do conteiner. Funciona unicamente com a propriedade wrap. 
+    </p>
+
+    <p>Exemplo:</p>
+
+    <div class="conteiner display-flex align-content-start">
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        
+        
+    </div>
+    
+    
     <h4>flex-end</h4>
+    <p class="descricao-propriedade">
+        O valor start alinha os elementos no inicio do conteiner. Funciona unicamente com a propriedade wrap. 
+    </p>
+
+    <p>Exemplo:</p>
+
+    <div class="conteiner display-flex align-content-start">
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        
+        
+    </div>
+    
+    
     <h4>space-between</h4>
+    <p class="descricao-propriedade">
+        O valor start alinha os elementos no inicio do conteiner. Funciona unicamente com a propriedade wrap. 
+    </p>
+
+    <p>Exemplo:</p>
+
+    <div class="conteiner display-flex align-content-start">
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        
+        
+    </div>
+    
+    
     <h4>space-around</h4>
+    <p class="descricao-propriedade">
+        O valor start alinha os elementos no inicio do conteiner. Funciona unicamente com a propriedade wrap. 
+    </p>
+
+    <p>Exemplo:</p>
+
+    <div class="conteiner display-flex align-content-start">
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        
+        
+    </div>
+    
+    
     <h4>space-evenly</h4>
+    <p class="descricao-propriedade">
+        O valor start alinha os elementos no inicio do conteiner. Funciona unicamente com a propriedade wrap. 
+    </p>
+
+    <p>Exemplo:</p>
+
+    <div class="conteiner display-flex align-content-start">
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        
+        
+    </div>
+    
     
 
 

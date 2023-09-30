@@ -15,11 +15,13 @@
 body {
     width: 90%;
     margin: auto;
+    background-color: #451952;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 10px;
+    color: #ffffff;
 }
 
 h1 {
@@ -65,8 +67,8 @@ tr:nth-child(odd) {
 
 .conteiner {
     height: 300px;
-    background-color: antiquewhite;
-    border: 5px solid #ff0000;
+    background-color: #F39F5A;
+    border: 5px solid #AE445A;
 
 }
 
@@ -116,16 +118,24 @@ tr:nth-child(odd) {
 
 /* JUSTIFY-CONTENT  */
 
-.justify-content-center {
-    justify-content: center;
-}
-
 .justify-content-flex-start {
     justify-content: flex-start;
 }
 
 .justify-content-flex-end {
     justify-content: flex-end;
+}
+
+.justify-content-start {
+    justify-content: start;
+}
+
+.justify-content-end {
+    justify-content: end;
+}
+
+.justify-content-center {
+    justify-content: center;
 }
 
 .justify-content-space-between {
@@ -190,6 +200,14 @@ tr:nth-child(odd) {
 
 .align-items-baseline {
     align-items: baseline;
+}
+
+.align-items-start {
+    align-items: start;
+}
+
+.align-items-end {
+    align-items: end;
 }
 
 

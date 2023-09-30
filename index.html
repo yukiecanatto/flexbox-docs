@@ -44,16 +44,28 @@
             <th class="valor">valor</th>
         </tr>
         <tr>
-            <td class="propriedade">flex-direction</td>
-            <td class="valor">row</td>
-        </tr>
-        <tr>
             <td class="propriedade">justify-content</td>
             <td class="valor">flex-start</td>
         </tr>
         <tr>
+            <td class="propriedade">flex-direction</td>
+            <td class="valor">row</td>
+        </tr>
+        <tr>
             <td class="propriedade">align-items</td>
-            <td class="valor">flex-start</td>
+            <td class="valor">normal</td>
+        </tr>
+        <tr>
+            <td class="propriedade">flex-wrap</td>
+            <td class="valor">nowrap</td>
+        </tr>
+        <tr>
+            <td class="propriedade">flex-flow</td>
+            <td class="valor">row nowrap</td>
+        </tr>
+        <tr>
+            <td class="propriedade">align-content</td>
+            <td class="valor">stretch</td>
         </tr>
     </table>
     
@@ -66,6 +78,91 @@
         A propriedade justify-content pode ser usada para justificar o conteúdo do elemento primário, ou seja, eixo X(row, row-reverse), ou eixo Y (column, column-reverse).
     </p>
     
+
+    <h4>flex-start</h4>
+    <p class="descricao-propriedade">Defaut da flex-direction para dispor os elementos, da esquerda para a direita.</p>
+
+    <p>Exemplo:</p>
+    
+    <div class="conteiner display-flex justify-content-flex-start" style="flex-direction: row-reverse;">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
+        <div class="contido">6</div>
+        <div class="contido">7</div>
+        <div class="contido">8</div>
+        <div class="contido">9</div>
+        <div class="contido">10</div>
+        
+    </div>
+
+
+    <h4>flex-end</h4>
+    <p class="descricao-propriedade">
+        Os itens contidos na div são dispostos no lado oposto ao Defaut, no caso são dispostos do lado direito do conteiner, quando o padrão seria pela esquerda.</p>
+
+    <p>Exemplo:</p>
+
+    <div class="conteiner display-flex justify-content-flex-end" style="flex-direction: row-reverse;">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
+        <div class="contido">6</div>
+        <div class="contido">7</div>
+        <div class="contido">8</div>
+        <div class="contido">9</div>
+        <div class="contido">10</div>
+    </div>
+
+
+    <h4>start</h4>
+    <p class="descricao-propriedade">
+        Os itens contidos na div são dispostos ao início do conteiner.
+    
+    </p>
+
+    <p>Exemplo:</p>
+
+    <div class="conteiner display-flex justify-content-start">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
+        <div class="contido">6</div>
+        <div class="contido">7</div>
+        <div class="contido">8</div>
+        <div class="contido">9</div>
+        <div class="contido">10</div>
+    </div>
+
+
+    <h4>end</h4>
+    <p class="descricao-propriedade">
+        Os itens contidos na div são dispostos ao final do conteiner.
+    
+    </p>
+
+    <p>Exemplo:</p>
+
+    <div class="conteiner display-flex justify-content-end">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
+        <div class="contido">6</div>
+        <div class="contido">7</div>
+        <div class="contido">8</div>
+        <div class="contido">9</div>
+        <div class="contido">10</div>
+    </div>
+
+
     <h4>center</h4>
     <p class="descricao-propriedade">
         O valor "center" vai alinhar o conteúdo ao centro do eixo primário.
@@ -73,33 +170,6 @@
 
     <p>Exemplo:</p>
     <div class="conteiner display-flex justify-content-center">
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-    </div>
-
-    <h4>flex-start</h4>
-    <p class="descricao-propriedade">Defaut da flex-direction para dispor os elementos, da esquerda para a direita.</p>
-
-    <p>Exemplo:</p>
-    
-    <div class="conteiner display-flex justify-content-flex-start">
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-    </div>
-
-
-    <h4>flex-end</h4>
-    <p class="descricao-propriedade">Os itens contidos na div são dispostos no lado oposto ao Defaut, no caso são dispostos do lado direito do conteiner, quando o padrão seria pela esquerda.</p>
-
-    <p>Exemplo:</p>
-
-    <div class="conteiner display-flex justify-content-flex-end">
         <div class="contido"></div>
         <div class="contido"></div>
         <div class="contido"></div>
@@ -307,7 +377,7 @@
     
     <h4>Normal e Stretch</h4>
     <p class="descricao-propriedade">
-        Ambas as propriedades agem da mesma forma em relação aos elementos contidos na div, esticando os elementos para ocupar todo o espaço do conteiner. 
+        Ambas as propriedades agem da mesma forma em relação aos elementos contidos na div, esticando-os elementos para ocupar todo o espaço do conteiner. 
     </p>
 
     <p>Exemplo:</p>
@@ -336,16 +406,34 @@
         <div class="contido" style="height: 200px;"></div>
         
     </div>
-    
-    
-    <h4>Flex-start</h4>
+
+
+    <h4>Baseline</h4>
     <p class="descricao-propriedade">
-        Os elementos são alinhados ao topo do conteiner.
+        Os elementos são alinhados sobre a linha central do conteiner. 
     </p>
 
     <p>Exemplo:</p>
 
-    <div class="conteiner display-flex align-items-flex-start">
+    <div class="conteiner display-flex align-items-baseline">
+        <div class="contido" style="height: 25px;"></div>
+        <div class="contido" style="height: 50px;"></div>
+        <div class="contido" style="height: 100px;"></div>
+        <div class="contido" style="height: 150px;"></div>
+        <div class="contido" style="height: 200px;"></div>
+        
+        
+    </div>
+    
+    
+    <h4>Flex-start</h4>
+    <p class="descricao-propriedade">
+        Os elementos são alinhados ao início da flex-box, obedecendo ao sentido da flex-box com a flex-direction.
+    </p>
+
+    <p>Exemplo:</p>
+
+    <div class="conteiner display-flex align-items-flex-start" style="flex-direction: row-reverse;">
         <div class="contido" style="height: 25px;"></div>
         <div class="contido" style="height: 50px;"></div>
         <div class="contido" style="height: 100px;"></div>
@@ -357,12 +445,12 @@
     
     <h4>Flex-end</h4>
     <p class="descricao-propriedade">
-        Os elementos são alinhados ao final do conteiner, literalmente na ultima linha do fundo.
+        Os elementos são alinhados ao final da flex-box, obedecendo ao sentido da flex-box com a flex-direction.
     </p>
 
     <p>Exemplo:</p>
 
-    <div class="conteiner display-flex align-items-flex-end">
+    <div class="conteiner display-flex align-items-flex-end" style="flex-direction: row-reverse;">
         <div class="contido" style="height: 25px;"></div>
         <div class="contido" style="height: 50px;"></div>
         <div class="contido" style="height: 100px;"></div>
@@ -372,14 +460,32 @@
     </div>
     
     
-    <h4>Baseline</h4>
+    <h4>start</h4>
     <p class="descricao-propriedade">
-        Os elementos são alinhados sobre a linha central do conteiner. 
+        Os elementos são alinhados ao inicio do conteiner. 
     </p>
 
     <p>Exemplo:</p>
 
-    <div class="conteiner display-flex align-items-baseline">
+    <div class="conteiner display-flex align-items-start">
+        <div class="contido" style="height: 25px;"></div>
+        <div class="contido" style="height: 50px;"></div>
+        <div class="contido" style="height: 100px;"></div>
+        <div class="contido" style="height: 150px;"></div>
+        <div class="contido" style="height: 200px;"></div>
+        
+        
+    </div>
+    
+    
+    <h4>end</h4>
+    <p class="descricao-propriedade">
+        Os elementos são alinhados ao final do conteiner. 
+    </p>
+
+    <p>Exemplo:</p>
+
+    <div class="conteiner display-flex align-items-end">
         <div class="contido" style="height: 25px;"></div>
         <div class="contido" style="height: 50px;"></div>
         <div class="contido" style="height: 100px;"></div>

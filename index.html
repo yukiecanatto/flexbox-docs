@@ -10,6 +10,37 @@
 
 </head>
 <body>
+
+    <header id="topo-pagina">
+        <nav>
+            <ul>
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="#justify-content">justify-content</a>
+                </li>
+                <li>
+                    <a href="#flex-direction">flex-direction</a>
+                </li>
+                <li>
+                    <a href="#align-items">align-items</a>
+                </li>
+                <li>
+                    <a href="#flex-wrap">flex-wrap</a>
+                </li>
+                <li>
+                    <a href="#flex-flow">flex-flow</a>
+                </li>
+                <li>
+                    <a href="#align-content">align-content</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    
     <h1>Flexbox</h1>
     <h2>Documentação</h2>
     <h3>display:flex</h3>
@@ -21,7 +52,7 @@
 
     </p>
 
-    <p>Exemplo</p>
+    <p>Exemplo:</p>
 
     <!-- Abreviação Emmet: div.container  -->
     <!-- duas estilizações dentro de uma classe, só no HTML. Em CSS ele entende diferente como descendência -->
@@ -34,7 +65,6 @@
         <div class="contido"></div>
         <div class="contido"></div>
     </div>
-
 
     <!-- Abreviação Emmit: table>(tr>th.popriedade+th.valor)+tr*3>td.propriedade+td.valor -->
     <table>
@@ -73,59 +103,62 @@
     
     
     <!-- justify-content  -->
-    <h3>justify-content</h3>
-    <p class="descricao-propriedade">
-        A propriedade justify-content alinha e espaça os objetos contidos na div, de acordo com o eixo principal, que pode ser em linha ou coluna.
-    </p>
 
-
-    <table>
-        <caption>Valores aceitos pela propriedade</caption>
-        <tr>
-            <th class="propriedade">Propriedade</th>
-            <th class="valor">valor</th>
-        </tr>
-        <tr>
-            <td class="propriedade">justify-content</td>
-            <td class="valor">flex-start</td>
-        </tr>
-        <tr>
-            <td class="propriedade"></td>
-            <td class="valor">flex-end</td>
-        </tr>
-        <tr>
-            <td class="propriedade"></td>
-            <td class="valor">start</td>
-        </tr>
-        <tr>
-            <td class="propriedade"></td>
-            <td class="valor">end</td>
-        </tr>
-        <tr>
-            <td class="propriedade"></td>
-            <td class="valor">center</td>
-        </tr>
-        <tr>
-            <td class="propriedade"></td>
-            <td class="valor">space-between</td>
-        </tr>
-        <tr>
-            <td class="propriedade"></td>
-            <td class="valor">space-around</td>
-        </tr>
-        <tr>
-            <td class="propriedade"></td>
-            <td class="valor">space-evenly</td>
-        </tr>
-        <tr>
-            <td class="propriedade"></td>
-            <td class="valor">initial</td>
-        </tr>
-        <tr>
-            <td class="propriedade"></td>
-            <td class="valor">inherit</td>
-        </tr>
-    </table>
+    <section id="justify-content">
+        <h3>justify-content</h3>
+        <p class="descricao-propriedade">
+            A propriedade justify-content alinha e espaça os objetos contidos na div, de acordo com o eixo principal, que pode ser em linha ou coluna.
+        </p>
+    
+    
+        <table>
+            <caption>Valores aceitos pela propriedade</caption>
+            <tr>
+                <th class="propriedade">Propriedade</th>
+                <th class="valor">valor</th>
+            </tr>
+            <tr>
+                <td class="propriedade">justify-content</td>
+                <td class="valor">flex-start</td>
+            </tr>
+            <tr>
+                <td class="propriedade"></td>
+                <td class="valor">flex-end</td>
+            </tr>
+            <tr>
+                <td class="propriedade"></td>
+                <td class="valor">start</td>
+            </tr>
+            <tr>
+                <td class="propriedade"></td>
+                <td class="valor">end</td>
+            </tr>
+            <tr>
+                <td class="propriedade"></td>
+                <td class="valor">center</td>
+            </tr>
+            <tr>
+                <td class="propriedade"></td>
+                <td class="valor">space-between</td>
+            </tr>
+            <tr>
+                <td class="propriedade"></td>
+                <td class="valor">space-around</td>
+            </tr>
+            <tr>
+                <td class="propriedade"></td>
+                <td class="valor">space-evenly</td>
+            </tr>
+            <tr>
+                <td class="propriedade"></td>
+                <td class="valor">initial</td>
+            </tr>
+            <tr>
+                <td class="propriedade"></td>
+                <td class="valor">inherit</td>
+            </tr>
+        </table>
+    </section>
     
 
     <h4>flex-start</h4>
@@ -334,44 +367,48 @@
 
 
     <!-- flex-direction  -->
-    <h3>flex-direction</h3>
 
-    <p class="descricao-popriedade">
-        A propriedade flex-direction permite a manipulação do eixo principal da div onde os elementos serão dispostos.
-    </p>
+    <section id="flex-direction">
 
-    <table>
-        <caption>Valores aceitos pela propriedade</caption>
-
-        <tr>
-            <th class="popriedade">Propriedade</th>
-            <th class="valor">Valor</th>
-        </tr>
-        <tr>
-            <th class="popriedade">flex-direction</th>
-            <th class="valor">row</th>
-        </tr>
-        <tr>
-            <td class="propriedade"></td>
-            <td class="valor">row-reverse</td>
-        </tr>
-        <tr>
-            <td class="propriedade"></td>
-            <td class="valor">column</td>
-        </tr>
-        <tr>
-            <td class="propriedade"></td>
-            <td class="valor">column-reverse</td>
-        </tr>
-        <tr>
-            <td class="propriedade"></td>
-            <td class="valor">initial</td>
-        </tr>
-        <tr>
-            <td class="propriedade"></td>
-            <td class="valor">inherit</td>
-        </tr>
-    </table>
+        <h3>flex-direction</h3>
+    
+        <p class="descricao-popriedade">
+            A propriedade flex-direction permite a manipulação do eixo principal da div onde os elementos serão dispostos.
+        </p>
+    
+        <table>
+            <caption>Valores aceitos pela propriedade</caption>
+    
+            <tr>
+                <th class="popriedade">Propriedade</th>
+                <th class="valor">Valor</th>
+            </tr>
+            <tr>
+                <th class="popriedade">flex-direction</th>
+                <th class="valor">row</th>
+            </tr>
+            <tr>
+                <td class="propriedade"></td>
+                <td class="valor">row-reverse</td>
+            </tr>
+            <tr>
+                <td class="propriedade"></td>
+                <td class="valor">column</td>
+            </tr>
+            <tr>
+                <td class="propriedade"></td>
+                <td class="valor">column-reverse</td>
+            </tr>
+            <tr>
+                <td class="propriedade"></td>
+                <td class="valor">initial</td>
+            </tr>
+            <tr>
+                <td class="propriedade"></td>
+                <td class="valor">inherit</td>
+            </tr>
+        </table>
+    </section>
 
 
     <h4>row</h4>
@@ -442,60 +479,64 @@
     
     
     <!-- align-items  -->
-    <h3>align-items</h3>
-    <p class="descricao-propriedade">
-        A propriedade align-items alinha os elementos no eixo transversal ao principal. 
-    </p>
 
+    <section id="align-items">
 
-    <table>
-        <caption>Valores aceitos pela propriedade</caption>
-
-        <tr>
-            <th class="popriedade">Propriedade</th>
-            <th class="valor">Valor</th>
-        </tr>
-        <tr>
-            <th class="popriedade">align-items</th>
-            <th class="valor">normal</th>
-        </tr>
-        <tr>
-            <td class="propriedade"></td>
-            <td class="valor">stretch</td>
-        </tr>
-        <tr>
-            <td class="propriedade"></td>
-            <td class="valor">center</td>
-        </tr>
-        <tr>
-            <td class="propriedade"></td>
-            <td class="valor">flex-start</td>
-        </tr>
-        <tr>
-            <td class="propriedade"></td>
-            <td class="valor">flex-end</td>
-        </tr>
-        <tr>
-            <td class="propriedade"></td>
-            <td class="valor">start</td>
-        </tr>
-        <tr>
-            <td class="propriedade"></td>
-            <td class="valor">end</td>
-        </tr>
-        <tr>
-            <td class="propriedade"></td>
-            <td class="valor">baseline</td>
-        </tr>
-        <tr>
-            <td class="propriedade"></td>
-            <td class="valor">initial</td>
-        </tr>
-        <tr>
-            <td class="propriedade"></td>
-            <td class="valor">inherit</td>
-        </tr>
-    </table>
+        <h3>align-items</h3>
+        <p class="descricao-propriedade">
+            A propriedade align-items alinha os elementos no eixo transversal ao principal. 
+        </p>
+    
+    
+        <table>
+            <caption>Valores aceitos pela propriedade</caption>
+    
+            <tr>
+                <th class="popriedade">Propriedade</th>
+                <th class="valor">Valor</th>
+            </tr>
+            <tr>
+                <th class="popriedade">align-items</th>
+                <th class="valor">normal</th>
+            </tr>
+            <tr>
+                <td class="propriedade"></td>
+                <td class="valor">stretch</td>
+            </tr>
+            <tr>
+                <td class="propriedade"></td>
+                <td class="valor">center</td>
+            </tr>
+            <tr>
+                <td class="propriedade"></td>
+                <td class="valor">flex-start</td>
+            </tr>
+            <tr>
+                <td class="propriedade"></td>
+                <td class="valor">flex-end</td>
+            </tr>
+            <tr>
+                <td class="propriedade"></td>
+                <td class="valor">start</td>
+            </tr>
+            <tr>
+                <td class="propriedade"></td>
+                <td class="valor">end</td>
+            </tr>
+            <tr>
+                <td class="propriedade"></td>
+                <td class="valor">baseline</td>
+            </tr>
+            <tr>
+                <td class="propriedade"></td>
+                <td class="valor">initial</td>
+            </tr>
+            <tr>
+                <td class="propriedade"></td>
+                <td class="valor">inherit</td>
+            </tr>
+        </table>
+    </section>
 
     
     <h4>normal e stretch</h4>
@@ -621,40 +662,44 @@
     
 
 
+    <!-- flex-wrap -->
 
-    <h3>flex-wrap</h3>
-    <p class="descricao-propriedade">
-        A propriede flex-wrap permite agrupar os elementos contidos na div, de maneira que uma vez atingido o limite do conteiner, a próxima linha ou coluna começará logo após a primeira.
-    </p>
+    <section id="flex-wrap">
 
-    <table>
-        <caption>Valores aceitos pela propriedade</caption>
-
-        <tr>
-            <th class="popriedade">Propriedade</th>
-            <th class="valor">Valor</th>
-        </tr>
-        <tr>
-            <th class="popriedade">flex-wrap</th>
-            <th class="valor">nowrap</th>
-        </tr>
-        <tr>
-            <td class="propriedade"></td>
-            <td class="valor">wrap</td>
-        </tr>
-        <tr>
-            <td class="propriedade"></td>
-            <td class="valor">wrap-reverse</td>
-        </tr>
-        <tr>
-            <td class="propriedade"></td>
-            <td class="valor">initial</td>
-        </tr>
-        <tr>
-            <td class="propriedade"></td>
-            <td class="valor">inherit</td>
-        </tr>
-    </table>
+        <h3>flex-wrap</h3>
+        <p class="descricao-propriedade">
+            A propriede flex-wrap permite agrupar os elementos contidos na div, de maneira que uma vez atingido o limite do conteiner, a próxima linha ou coluna começará logo após a primeira.
+        </p>
+    
+        <table>
+            <caption>Valores aceitos pela propriedade</caption>
+    
+            <tr>
+                <th class="popriedade">Propriedade</th>
+                <th class="valor">Valor</th>
+            </tr>
+            <tr>
+                <th class="popriedade">flex-wrap</th>
+                <th class="valor">nowrap</th>
+            </tr>
+            <tr>
+                <td class="propriedade"></td>
+                <td class="valor">wrap</td>
+            </tr>
+            <tr>
+                <td class="propriedade"></td>
+                <td class="valor">wrap-reverse</td>
+            </tr>
+            <tr>
+                <td class="propriedade"></td>
+                <td class="valor">initial</td>
+            </tr>
+            <tr>
+                <td class="propriedade"></td>
+                <td class="valor">inherit</td>
+            </tr>
+        </table>
+    </section>
 
 
     <h4>nowrap</h4>
@@ -743,97 +788,148 @@
 
 
     <!-- flex-flow -->
-    <h3>flex-flow</h3>
-    <p class="descricao-propriedade">
-        A propriedade flex-flow é uma abreviação que engloba duas outras propriedades da flexbox, flex-direction e flex-wrap, o qual podem ser declaradas numa unica propriedade, pois o flex-flow aceita os dois valores das propriedades, uma ao lado da outra com um espaço entre elas. Note que esse shorthand somente é interessante com o uso do wrap, pois por padrão os elementos já são dispostos com nowrap, ou seja eles não serão agrupados em direção alguma.
-    </p>
 
-    <table>
-        <caption>Valores aceitos pela propriedade</caption>
-
-        <tr>
-            <th class="popriedade">Propriedade</th>
-            <th class="valor">Valor</th>
-        </tr>
-        <tr>
-            <th class="popriedade">flex-direction</th>
-            <th class="valor">row</th>
-        </tr>
-        <tr>
-            <td class="propriedade"></td>
-            <td class="valor">row-reverse</td>
-        </tr>
-        <tr>
-            <td class="propriedade"></td>
-            <td class="valor">column</td>
-        </tr>
-        <tr>
-            <td class="propriedade"></td>
-            <td class="valor">column-reverse</td>
-        </tr>
-        <tr>
-            <td class="propriedade"></td>
-            <td class="valor">initial</td>
-        </tr>
-        <tr>
-            <td class="propriedade"></td>
-            <td class="valor">inherit</td>
-        </tr>
-        <tr>
-            <td class="propriedade">flex-wrap</td>
-            <td class="valor">nowrap</td>
-        </tr>
-        <tr>
-            <td class="propriedade"></td>
-            <td class="valor">wrap</td>
-        </tr>
-        <tr>
-            <td class="propriedade"></td>
-            <td class="valor">wrap-reverse</td>
-        </tr>
-        <tr>
-            <td class="propriedade"></td>
-            <td class="valor">initial</td>
-        </tr>
-        <tr>
-            <td class="propriedade"></td>
-            <td class="valor">inherit</td>
-        </tr>
-    </table>
-
-    <p>Exemplo:</p>
-
-    <p>flex-flow: row-reverse wrap</p>
-
-    <div class="conteiner display-flex flex-flow-row-reverse-wrap">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-        <div class="contido">5</div>
-        <div class="contido">6</div>
-        <div class="contido">7</div>
-        <div class="contido">8</div>
-        <div class="contido">9</div>
-        <div class="contido">10</div>
-        <div class="contido">11</div>
-        <div class="contido">12</div>
-        <div class="contido">13</div>
-        <div class="contido">14</div>
-        <div class="contido">15</div> 
+    <section id="flex-flow">
         
-        
-    </div>
+        <h3>flex-flow</h3>
+        <p class="descricao-propriedade">
+            A propriedade flex-flow é uma abreviação que engloba duas outras propriedades da flexbox, flex-direction e flex-wrap, o qual podem ser declaradas numa unica propriedade, pois o flex-flow aceita os dois valores das propriedades, uma ao lado da outra com um espaço entre elas. Note que esse shorthand somente é interessante com o uso do wrap, pois por padrão os elementos já são dispostos com nowrap, ou seja eles não serão agrupados em direção alguma.
+        </p>
+    
+        <table>
+            <caption>Valores aceitos pela propriedade</caption>
+    
+            <tr>
+                <th class="popriedade">Propriedade</th>
+                <th class="valor">Valor</th>
+            </tr>
+            <tr>
+                <th class="popriedade">flex-direction</th>
+                <th class="valor">row</th>
+            </tr>
+            <tr>
+                <td class="propriedade"></td>
+                <td class="valor">row-reverse</td>
+            </tr>
+            <tr>
+                <td class="propriedade"></td>
+                <td class="valor">column</td>
+            </tr>
+            <tr>
+                <td class="propriedade"></td>
+                <td class="valor">column-reverse</td>
+            </tr>
+            <tr>
+                <td class="propriedade"></td>
+                <td class="valor">initial</td>
+            </tr>
+            <tr>
+                <td class="propriedade"></td>
+                <td class="valor">inherit</td>
+            </tr>
+            <tr>
+                <td class="propriedade">flex-wrap</td>
+                <td class="valor">nowrap</td>
+            </tr>
+            <tr>
+                <td class="propriedade"></td>
+                <td class="valor">wrap</td>
+            </tr>
+            <tr>
+                <td class="propriedade"></td>
+                <td class="valor">wrap-reverse</td>
+            </tr>
+            <tr>
+                <td class="propriedade"></td>
+                <td class="valor">initial</td>
+            </tr>
+            <tr>
+                <td class="propriedade"></td>
+                <td class="valor">inherit</td>
+            </tr>
+        </table>
+    
+        <p>Exemplo:</p>
+    
+        <p>flex-flow: row-reverse wrap</p>
+    
+        <div class="conteiner display-flex flex-flow-row-reverse-wrap">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">3</div>
+            <div class="contido">4</div>
+            <div class="contido">5</div>
+            <div class="contido">6</div>
+            <div class="contido">7</div>
+            <div class="contido">8</div>
+            <div class="contido">9</div>
+            <div class="contido">10</div>
+            <div class="contido">11</div>
+            <div class="contido">12</div>
+            <div class="contido">13</div>
+            <div class="contido">14</div>
+            <div class="contido">15</div> 
+            
+            
+        </div>
+    </section>
 
     
     
 
 
     <!-- align-content  -->
-    <h3>align-content</h3>
-    <p class="descricao-propriedade">
-        A propriedade align-content comanda o alinhamento do conteudo na div com o uso de wrap, no eixo transversal em relação ao eixo principal. Que no caso pode variar entre horizontal e vertical, a depender do alinhamento da flex-direction, sendo o padrão row(linha), ele espaçará entre as linhas, porém se o alinhamento for em coluna, ele espaçará entre as colunas.
-    </p>
+
+    <section id="align-content">
+
+        <h3>align-content</h3>
+        <p class="descricao-propriedade">
+            A propriedade align-content comanda o alinhamento do conteudo na div com o uso de wrap, no eixo transversal em relação ao eixo principal. Que no caso pode variar entre horizontal e vertical, a depender do alinhamento da flex-direction, sendo o padrão row(linha), ele espaçará entre as linhas, porém se o alinhamento for em coluna, ele espaçará entre as colunas.
+        </p>
+
+        <table>
+            <caption>Valores aceitos pela propriedade</caption>
+    
+            <tr>
+                <th class="popriedade">Propriedade</th>
+                <th class="valor">Valor</th>
+            </tr>
+            <tr>
+                <th class="popriedade">align-content</th>
+                <th class="valor">stretch</th>
+            </tr>
+            <tr>
+                <td class="propriedade"></td>
+                <td class="valor">center</td>
+            </tr>
+            <tr>
+                <td class="propriedade"></td>
+                <td class="valor">flex-start</td>
+            </tr>
+            <tr>
+                <td class="propriedade"></td>
+                <td class="valor">flex-end</td>
+            </tr>
+            <tr>
+                <td class="propriedade"></td>
+                <td class="valor">start</td>
+            </tr>
+            <tr>
+                <td class="propriedade"></td>
+                <td class="valor">end</td>
+            </tr>
+            <tr>
+                <td class="propriedade"></td>
+                <td class="valor">initial</td>
+            </tr>
+            <tr>
+                <td class="propriedade"></td>
+                <td class="valor">inherit</td>
+            </tr>
+        </table>
+
+
+    </section>
 
 
     <h4>stretch</h4>

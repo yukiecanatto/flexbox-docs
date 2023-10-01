@@ -83,7 +83,6 @@ p {
 
 td, th, caption {
     
-    
     font-size: 16pt;
     color: #ffffff;
 }
@@ -110,38 +109,35 @@ tr:nth-child(even) {
 .contido {
     width: 100px;
     height: 100px;
-    border: 2px solid #000000;
+    border: 2px solid #451952;
     border-radius: 20%;
-    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
 }
 
 .contido:nth-child(5n+1) {
-    background-color: #ff0000;
+    background-color: #D27685;
 }
 
 .contido:nth-child(5n+2) {
-    background-color: #00ff00;
+    background-color: #9E4784;
 }
 
 .contido:nth-child(5n+3) {
-    background-color: #0000ff;
+    background-color: #66347F;
 }
 
 .contido:nth-child(5n+4) {
-    background-color: #ff7b00;
+    background-color: #37306B;
 }
 
 .contido:nth-child(5n+5) {
     background-color: #8600a4;
-}
-
-.contido-inherit {
-    width: 30px;
-    height: 30px;
-    background-color: aqua;
-    border: 2px solid #ffffff;
-    border-radius: 20%;
-    
 }
 
 
@@ -190,7 +186,6 @@ tr:nth-child(even) {
 }
 
 .justify-content-inherit {
-    display: flex;
     justify-content: inherit;
 }
 
@@ -284,6 +279,14 @@ tr:nth-child(even) {
 
 .align-content-flex-end {
     align-content: flex-end;
+}
+
+.align-content-start {
+    align-content: start;
+}
+
+.align-content-end {
+    align-content: end;
 }
 
 .align-content-space-between {

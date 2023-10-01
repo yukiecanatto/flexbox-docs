@@ -351,12 +351,13 @@
         <div class="contido"></div>
         <div class="contido"></div>
          
-        <div class="contido display-flex">
-            <div class="contido-inherit display-flex justify-content-inherit"></div>
-            <div class="contido-inherit display-flex justify-content-inherit"></div>
-            <div class="contido-inherit display-flex justify-content-inherit"></div>
-            <div class="contido-inherit display-flex justify-content-inherit"></div>
-            <div class="contido-inherit display-flex justify-content-inherit"></div>
+        <div class="contido display-flex" style="flex-wrap: nowrap;">
+            <div class="contido justify-content-inherit" style="height:30px; width: 30px;"></div>
+            <div class="contido justify-content-inherit" style="height:30px; width: 30px;"></div>
+            <div class="contido justify-content-inherit" style="height:30px; width: 30px;"></div>
+            <div class="contido justify-content-inherit" style="height:30px; width: 30px;"></div>
+            <div class="contido justify-content-inherit" style="height:30px; width: 30px;"></div>
+            
 
         </div>       
 
@@ -912,11 +913,15 @@
             </tr>
             <tr>
                 <td class="propriedade"></td>
-                <td class="valor">start</td>
+                <td class="valor">space-between</td>
             </tr>
             <tr>
                 <td class="propriedade"></td>
-                <td class="valor">end</td>
+                <td class="valor">space-around</td>
+            </tr>
+            <tr>
+                <td class="propriedade"></td>
+                <td class="valor">space-evenly</td>
             </tr>
             <tr>
                 <td class="propriedade"></td>
@@ -992,22 +997,23 @@
 
     <p>Exemplo:</p>
 
-    <div class="conteiner display-flex align-content-flex-start" style="flex-wrap: wrap;">
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
+    <div class="conteiner display-flex align-content-flex-start" style="flex-wrap: wrap; flex-direction: row-reverse;">
+            
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">3</div>
+            <div class="contido">4</div>
+            <div class="contido">5</div>
+            <div class="contido">6</div>
+            <div class="contido">7</div>
+            <div class="contido">8</div>
+            <div class="contido">9</div>
+            <div class="contido">10</div>
+            <div class="contido">11</div>
+            <div class="contido">12</div>
+            <div class="contido">13</div>
+            <div class="contido">14</div>
+            <div class="contido">15</div>
         
         
     </div>
@@ -1020,26 +1026,82 @@
 
     <p>Exemplo:</p>
 
-    <div class="conteiner display-flex align-content-flex-end" style="flex-wrap: wrap;">
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
+    <div class="conteiner display-flex align-content-flex-end" style="flex-wrap: wrap; flex-direction: row-reverse;">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">3</div>
+            <div class="contido">4</div>
+            <div class="contido">5</div>
+            <div class="contido">6</div>
+            <div class="contido">7</div>
+            <div class="contido">8</div>
+            <div class="contido">9</div>
+            <div class="contido">10</div>
+            <div class="contido">11</div>
+            <div class="contido">12</div>
+            <div class="contido">13</div>
+            <div class="contido">14</div>
+            <div class="contido">15</div>
+        
+        
+    </div>
+
+
+    <h4>start</h4>
+    <p class="descricao-propriedade">
+        O valor start alinha os elementos no inicio do conteiner. Funciona unicamente com a propriedade wrap. 
+    </p>
+
+    <p>Exemplo:</p>
+
+    <div class="conteiner display-flex align-content-start" style="flex-wrap: wrap;">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
+        <div class="contido">6</div>
+        <div class="contido">7</div>
+        <div class="contido">8</div>
+        <div class="contido">9</div>
+        <div class="contido">10</div>
+        <div class="contido">11</div>
+        <div class="contido">12</div>
+        <div class="contido">13</div>
+        <div class="contido">14</div>
+        <div class="contido">15</div> 
         
         
     </div>
     
+    
+    <h4>end</h4>
+    <p class="descricao-propriedade">
+        O valor start alinha os elementos no final do conteiner. Funciona unicamente com a propriedade wrap. 
+    </p>
+
+    <p>Exemplo:</p>
+
+    <div class="conteiner display-flex align-content-end" style="flex-wrap: wrap;">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
+        <div class="contido">6</div>
+        <div class="contido">7</div>
+        <div class="contido">8</div>
+        <div class="contido">9</div>
+        <div class="contido">10</div>
+        <div class="contido">11</div>
+        <div class="contido">12</div>
+        <div class="contido">13</div>
+        <div class="contido">14</div>
+        <div class="contido">15</div>
+        
+        
+    </div>
+
 
     <h4>space-between</h4>
     <p class="descricao-propriedade">

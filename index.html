@@ -38,7 +38,7 @@
 
     <!-- Abreviação Emmit: table>(tr>th.popriedade+th.valor)+tr*3>td.propriedade+td.valor -->
     <table>
-        <caption>Valores padrão das propriedades do Flexbox</caption>
+        <caption>Valores padrão das propriedades Flexbox</caption>
         <tr>
             <th class="propriedade">Propriedade</th>
             <th class="valor">valor</th>
@@ -72,19 +72,70 @@
 
     
     
-    
+    <!-- justify-content  -->
     <h3>justify-content</h3>
     <p class="descricao-propriedade">
-        A propriedade justify-content pode ser usada para justificar o conteúdo do elemento primário, ou seja, eixo X(row, row-reverse), ou eixo Y (column, column-reverse).
+        A propriedade justify-content alinha e espaça os objetos contidos na div, de acordo com o eixo principal, que pode ser em linha ou coluna.
     </p>
+
+
+    <table>
+        <caption>Valores aceitos pela propriedade</caption>
+        <tr>
+            <th class="propriedade">Propriedade</th>
+            <th class="valor">valor</th>
+        </tr>
+        <tr>
+            <td class="propriedade">justify-content</td>
+            <td class="valor">flex-start</td>
+        </tr>
+        <tr>
+            <td class="propriedade"></td>
+            <td class="valor">flex-end</td>
+        </tr>
+        <tr>
+            <td class="propriedade"></td>
+            <td class="valor">start</td>
+        </tr>
+        <tr>
+            <td class="propriedade"></td>
+            <td class="valor">end</td>
+        </tr>
+        <tr>
+            <td class="propriedade"></td>
+            <td class="valor">center</td>
+        </tr>
+        <tr>
+            <td class="propriedade"></td>
+            <td class="valor">space-between</td>
+        </tr>
+        <tr>
+            <td class="propriedade"></td>
+            <td class="valor">space-around</td>
+        </tr>
+        <tr>
+            <td class="propriedade"></td>
+            <td class="valor">space-evenly</td>
+        </tr>
+        <tr>
+            <td class="propriedade"></td>
+            <td class="valor">initial</td>
+        </tr>
+        <tr>
+            <td class="propriedade"></td>
+            <td class="valor">inherit</td>
+        </tr>
+    </table>
     
 
     <h4>flex-start</h4>
-    <p class="descricao-propriedade">Defaut da flex-direction para dispor os elementos, da esquerda para a direita.</p>
+    <p class="descricao-propriedade">
+        Valor padrão da justify-content para dispor os elementos ao início da flex-box de acordo com a flex-direction. No exemplo é demontrado o flex-start com row-reverce, que inverte o eixo.
+    </p>
 
     <p>Exemplo:</p>
     
-    <div class="conteiner display-flex justify-content-flex-start" style="flex-direction: row-reverse;">
+    <div class="conteiner display-flex justify-content-flex-start" style="flex-direction: row-reverse; flex-wrap: wrap;">
         <div class="contido">1</div>
         <div class="contido">2</div>
         <div class="contido">3</div>
@@ -95,17 +146,23 @@
         <div class="contido">8</div>
         <div class="contido">9</div>
         <div class="contido">10</div>
+        <div class="contido">11</div>
+        <div class="contido">12</div>
+        <div class="contido">13</div>
+        <div class="contido">14</div>
+        <div class="contido">15</div>
         
     </div>
 
 
     <h4>flex-end</h4>
     <p class="descricao-propriedade">
-        Os itens contidos na div são dispostos no lado oposto ao Defaut, no caso são dispostos do lado direito do conteiner, quando o padrão seria pela esquerda.</p>
+        O flex-end dispõe os elementos ao final da flex-box de acordo com a flex-direction. No exemplo é demontrado o flex-end com row-reverce, que inverte o eixo.
+    </p>
 
     <p>Exemplo:</p>
 
-    <div class="conteiner display-flex justify-content-flex-end" style="flex-direction: row-reverse;">
+    <div class="conteiner display-flex justify-content-flex-end" style="flex-direction: row-reverse; flex-wrap: wrap;">
         <div class="contido">1</div>
         <div class="contido">2</div>
         <div class="contido">3</div>
@@ -116,18 +173,23 @@
         <div class="contido">8</div>
         <div class="contido">9</div>
         <div class="contido">10</div>
+        <div class="contido">11</div>
+        <div class="contido">12</div>
+        <div class="contido">13</div>
+        <div class="contido">14</div>
+        <div class="contido">15</div>
     </div>
 
 
     <h4>start</h4>
     <p class="descricao-propriedade">
-        Os itens contidos na div são dispostos ao início do conteiner.
+        Os itens contidos na div são dispostos ao início do conteiner. Mesmo a flex-direction em row-reverse, os lementos foram alinhados no inicio do conteiner.
     
     </p>
 
     <p>Exemplo:</p>
 
-    <div class="conteiner display-flex justify-content-start">
+    <div class="conteiner display-flex justify-content-start" style="flex-direction: row-reverse;">
         <div class="contido">1</div>
         <div class="contido">2</div>
         <div class="contido">3</div>
@@ -143,7 +205,7 @@
 
     <h4>end</h4>
     <p class="descricao-propriedade">
-        Os itens contidos na div são dispostos ao final do conteiner.
+        Os itens contidos na div são dispostos ao final do conteiner. Mesmo a flex-direction em row-reverse, os elementos foram alinhados no final do conteiner.
     
     </p>
 
@@ -165,7 +227,7 @@
 
     <h4>center</h4>
     <p class="descricao-propriedade">
-        O valor "center" vai alinhar o conteúdo ao centro do eixo primário.
+        O valor center alinha o conteúdo ao centro do eixo primário.
     </p>
 
     <p>Exemplo:</p>
@@ -179,7 +241,9 @@
 
 
     <h4>space-between</h4>
-    <p class="descricao-propriedade">Os itens contidos na div são dispostos com um espaço entre cada um deles. No caso os quadrados contidos na div são exibidos com um espaço entre eles, mas não espaço da margem. Note que os quadrados das pontas estão praticamente colados nos cantos.</p>
+    <p class="descricao-propriedade">
+        Os itens contidos na div são dispostos com um espaço entre cada um deles. No caso os elementos contidos na div são exibidos com um espaço entre eles, mas não espaço da margem. Note que os quadrados das pontas estão praticamente colados nos cantos.
+    </p>
 
     <p>Exemplo:</p>
 
@@ -193,7 +257,9 @@
       
     
     <h4>space-around</h4>
-    <p class="descricao-propriedade">Os itens contidos na div são dispostos de maneira semelhante à propriedade space-between, porém com o diferêncial do espaço entre os objetos ser no total entorno dele. Diferênte de space-between que não espaça os objetos da margem ou do canto da tela, space-around garante o espaço da antes e depois do objeto, ou seja vai ter os espaços entre os quadradinhos, mas com as pontas descoladas dos cantos.</p>
+    <p class="descricao-propriedade">
+        Os itens contidos na div são dispostos de maneira semelhante à propriedade space-between, porém com o diferêncial do espaço entre os elementos ser no total entorno dele. Diferênte de space-between que não espaça os objetos da margem, space-around garante o espaço antes e depois de cada elemento, ou seja haverá um espaços entre os quadradinhos, mas com as pontas descoladas da margem.
+    </p>
 
     <p>Exemplo:</p>
 
@@ -207,7 +273,9 @@
     
     
     <h4>space-evenly</h4>
-    <p class="descricao-propriedade">Essa propriedade é o aprimoramento das outras duas anteriores por assim dizer. Pois dispões os objetos dentro da div espaçados de maneira igual, o mesmo espaço entre cada item, será o mesmo o espaço entre as pontas e a borda/margem/canto da tela/final do monitor! Vamos ao Exemplo.</p>
+    <p class="descricao-propriedade">
+        Essa propriedade é o aprimoramento das outras duas anteriores por assim dizer. Pois dispões os elementos dentro da div espaçados de maneira igual, o mesmo espaço entre cada item, será o mesmo o espaço entre as pontas e margem.
+    </p>
 
     <p>Exemplo:</p>
 
@@ -221,7 +289,9 @@
 
 
     <h4>initial</h4>
-    <p class="descricao-propriedade">A propriedade initial aponta ao Default da propriedade Flex, a qual por padrão segue a direção flex-start, ou seja os itens serão posicionados no caso da esquerda para a direita.</p>
+    <p class="descricao-propriedade">
+        A propriedade initial aponta ao default da propriedade, no caso flex-start, o qual no exemplo a seguir, segue o default row e initial.
+    </p>
 
     <p>Exemplo:</p>
 
@@ -235,7 +305,9 @@
 
 
     <h4>inherit</h4>
-    <p class="descricao-propriedade">Os itens contidos na div herdarão as características da sua classe pai. No caso o alinhamento começando pela direita.</p>
+    <p class="descricao-propriedade">
+        Os elementos contidos na div herdarão as características da sua classe pai. No caso o flex-end na linha principal, e o flex-end herdado pela pequena linha apertada no último quadradinho.
+    </p>
 
     <p>Exemplo:</p>
 
@@ -261,15 +333,15 @@
 
 
 
-
+    <!-- flex-direction  -->
     <h3>flex-direction</h3>
 
     <p class="descricao-popriedade">
-        A propriedade flex-direction permite que você escolha a direção do alinhamento o qual serão dispostos os elementos dentro da div. Lembrando que o elemento deve ser conter a propriedade display-flex, do contário a propriedade flex direction, não surte efeito algum.
+        A propriedade flex-direction permite a manipulação do eixo principal da div onde os elementos serão dispostos.
     </p>
 
     <table>
-        <caption>Valores padrão das propriedades do flex-direction</caption>
+        <caption>Valores aceitos pela propriedade</caption>
 
         <tr>
             <th class="popriedade">Propriedade</th>
@@ -304,7 +376,7 @@
 
     <h4>row</h4>
     <p class="descricao-popriedade">
-        A propriedade padrão da flex-direction, dispondo os elementos em linha da esquerda para a direita.
+        Valor padrão da flex-direction, dispondo os elementos em linha da esquerda para a direita.
     </p>
 
     <p>Exemplo:</p>
@@ -320,7 +392,7 @@
 
     <h4>row-reverse</h4>
     <p class="descricao-propriedade">
-        Repare que as caixinhas, além de terem sido alinhadas à direita, também iniciaram a contagem da direita para a esquerda. Isso se deve a utilização do valor 'row-reverse', o qual dispôs os elementos reversamente, porém a propriedade pode ser usada da maneira que for melhro ao projeto, da esquerda para a direita, direita para a esquerda, de cima para baixo, e de baixo para cima à sua escolha
+        Valor que inverte o eixo da linha, dispondo os elementos da direita para a esquerda.
     </p>
 
     <p>Exemplo:</p>
@@ -334,9 +406,9 @@
     </div>
     
     
-    <h4>Column</h4>
+    <h4>column</h4>
     <p class="descricao-propriedade">
-        A propriedade column alinha os elementos contidos na div em coluna de cima para baixo.
+        O valor column alinha os elementos contidos na div em coluna.
     </p>
 
     <p>Exemplo:</p>
@@ -350,9 +422,9 @@
     </div>
     
     
-    <h4>Column-reverse</h4>
+    <h4>column-reverse</h4>
     <p class="descricao-propriedade">
-        A propriedade column-reverse também alinha os elementos contidos na div em coluna, mas dispondo os elementos em reverso, ou seja de baixo para cima.
+        O valor column-reverse também alinha os elementos contidos na div em coluna, porém invertendo o eixo.
     </p>
 
     <p>Exemplo:</p>
@@ -369,13 +441,64 @@
     
     
     
-    
-    <h3>Align-items</h3>
+    <!-- align-items  -->
+    <h3>align-items</h3>
     <p class="descricao-propriedade">
-        A propriedade align-items alinha os elementos na div verticalmente. 
+        A propriedade align-items alinha os elementos no eixo transversal ao principal. 
     </p>
+
+
+    <table>
+        <caption>Valores aceitos pela propriedade</caption>
+
+        <tr>
+            <th class="popriedade">Propriedade</th>
+            <th class="valor">Valor</th>
+        </tr>
+        <tr>
+            <th class="popriedade">align-items</th>
+            <th class="valor">normal</th>
+        </tr>
+        <tr>
+            <td class="propriedade"></td>
+            <td class="valor">stretch</td>
+        </tr>
+        <tr>
+            <td class="propriedade"></td>
+            <td class="valor">center</td>
+        </tr>
+        <tr>
+            <td class="propriedade"></td>
+            <td class="valor">flex-start</td>
+        </tr>
+        <tr>
+            <td class="propriedade"></td>
+            <td class="valor">flex-end</td>
+        </tr>
+        <tr>
+            <td class="propriedade"></td>
+            <td class="valor">start</td>
+        </tr>
+        <tr>
+            <td class="propriedade"></td>
+            <td class="valor">end</td>
+        </tr>
+        <tr>
+            <td class="propriedade"></td>
+            <td class="valor">baseline</td>
+        </tr>
+        <tr>
+            <td class="propriedade"></td>
+            <td class="valor">initial</td>
+        </tr>
+        <tr>
+            <td class="propriedade"></td>
+            <td class="valor">inherit</td>
+        </tr>
+    </table>
+
     
-    <h4>Normal e Stretch</h4>
+    <h4>normal e stretch</h4>
     <p class="descricao-propriedade">
         Ambas as propriedades agem da mesma forma em relação aos elementos contidos na div, esticando-os elementos para ocupar todo o espaço do conteiner. 
     </p>
@@ -391,9 +514,9 @@
     </div>
     
     
-    <h4>Center</h4>
+    <h4>center</h4>
     <p class="descricao-propriedade">
-        Os elementos são alinhados ao centro do eixo vertical da div.
+        Os elementos são alinhados ao centro.
     </p>
 
     <p>Exemplo:</p>
@@ -408,9 +531,9 @@
     </div>
 
 
-    <h4>Baseline</h4>
+    <h4>baseline</h4>
     <p class="descricao-propriedade">
-        Os elementos são alinhados sobre a linha central do conteiner. 
+        Os elementos são alinhados sobre a linha central no conteiner. 
     </p>
 
     <p>Exemplo:</p>
@@ -426,9 +549,9 @@
     </div>
     
     
-    <h4>Flex-start</h4>
+    <h4>flex-start</h4>
     <p class="descricao-propriedade">
-        Os elementos são alinhados ao início da flex-box, obedecendo ao sentido da flex-box com a flex-direction.
+        Os elementos são alinhados ao início da flex-box, obedecendo ao sentido da flex-box com a flex-direction. No caso com row-reverce.
     </p>
 
     <p>Exemplo:</p>
@@ -443,9 +566,9 @@
     </div>
     
     
-    <h4>Flex-end</h4>
+    <h4>flex-end</h4>
     <p class="descricao-propriedade">
-        Os elementos são alinhados ao final da flex-box, obedecendo ao sentido da flex-box com a flex-direction.
+        Os elementos são alinhados ao final da flex-box, obedecendo ao sentido da flex-box com a flex-direction. No caso com row-reverce.
     </p>
 
     <p>Exemplo:</p>
@@ -501,11 +624,11 @@
 
     <h3>flex-wrap</h3>
     <p class="descricao-propriedade">
-        A propriede flex-wrap permite a cofiguração se os itens contidos na div devem ou não ser agrupados. O que os faram se agruparem de um lado ou outro, uma vez atingido o limite do conteiner, a próxima linha ou coluna começará logo ao lado.
+        A propriede flex-wrap permite agrupar os elementos contidos na div, de maneira que uma vez atingido o limite do conteiner, a próxima linha ou coluna começará logo após a primeira.
     </p>
 
     <table>
-        <caption>Valores aceitos pela propriedade flex-wrap</caption>
+        <caption>Valores aceitos pela propriedade</caption>
 
         <tr>
             <th class="popriedade">Propriedade</th>
@@ -536,12 +659,27 @@
 
     <h4>nowrap</h4>
     <p class="descricao-propriedade">
-        O valor nowrap vem como padrão e indica que os elementos contido na div não serã agrupados. Ou seja com ou sem esse valor definido, por padrão os elementos contidos no conteiner não se agrupam. 
+        Valor padrão e que não permite que os elementos contidos na div uma vez atingido o limite do conteiner, não quebrará a linha ou coluna, e espremerá os elementos contidos.
     </p>
 
     <p>Exemplo:</p>
 
     <div class="conteiner display-flex flex-wrap-nowrap">
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
         <div class="contido"></div>
         <div class="contido"></div>
         <div class="contido"></div>
@@ -554,7 +692,7 @@
     
     <h4>wrap</h4>
     <p class="descricao-propriedade">
-        O valor wrap agrupa os elementos contido na div, quebrando a linha quando necessário, ao atingir o limite do conteiner. 
+        O valor wrap agrupa os elementos contido na div, quebrando a linha quando necessário ao atingir o limite do conteiner. 
     </p>
 
     <p>Exemplo:</p>
@@ -581,7 +719,7 @@
     
     <h4>wrap-reverse</h4>
     <p class="descricao-propriedade">
-        O valor wrap-reverse agrupa os elementos contido na div em ordem reversa, quebrando a linha quando necessário . 
+        O valor wrap-reverse agrupa os elementos contido na div em ordem reversa, também quebrando a linha quando necessário . 
     </p>
 
     <div class="conteiner display-flex flex-wrap-wrap-reverse">
@@ -604,17 +742,14 @@
     </div>
 
 
-
-
-
-    
+    <!-- flex-flow -->
     <h3>flex-flow</h3>
     <p class="descricao-propriedade">
-        A propriedade flex-flow é uma abreviação que engloba duas outras propriedades do flexbox, flex-direction e flex-wrap, o qual podem ser declaradas numa unica propriedade, pois o flex-flow aceita os dois valores das propriedades, uma ao lado da outra com um espaço entre elas. Note que esse shorthand somente é interessante com o uso do wrap, pois por padrão os elementos já são dispostos com nowrap, ou seja eles não serão agrupados em direção alguma.
+        A propriedade flex-flow é uma abreviação que engloba duas outras propriedades da flexbox, flex-direction e flex-wrap, o qual podem ser declaradas numa unica propriedade, pois o flex-flow aceita os dois valores das propriedades, uma ao lado da outra com um espaço entre elas. Note que esse shorthand somente é interessante com o uso do wrap, pois por padrão os elementos já são dispostos com nowrap, ou seja eles não serão agrupados em direção alguma.
     </p>
 
     <table>
-        <caption>Valores aceitos pela propriedade flex-flow</caption>
+        <caption>Valores aceitos pela propriedade</caption>
 
         <tr>
             <th class="popriedade">Propriedade</th>
@@ -645,7 +780,7 @@
             <td class="valor">inherit</td>
         </tr>
         <tr>
-            <td class="propriedade">fle-wrap</td>
+            <td class="propriedade">flex-wrap</td>
             <td class="valor">nowrap</td>
         </tr>
         <tr>
@@ -694,9 +829,12 @@
     
 
 
-
+    <!-- align-content  -->
     <h3>align-content</h3>
-    <p class="descricao-propriedade">A propriedade align-content comanda o alinhamento do conteudo na div com o uso de wrap, no eixo transversal em relação ao eixo principal. Que no caso pode variar entre horizontal e vertical, a depender do alinhamento da flex-direction, sendo o padrão row(linha), ele espaçará entre as linhas, porém se o alinhamento for em coluna, ele alinhará entre as colunas.</p>
+    <p class="descricao-propriedade">
+        A propriedade align-content comanda o alinhamento do conteudo na div com o uso de wrap, no eixo transversal em relação ao eixo principal. Que no caso pode variar entre horizontal e vertical, a depender do alinhamento da flex-direction, sendo o padrão row(linha), ele espaçará entre as linhas, porém se o alinhamento for em coluna, ele espaçará entre as colunas.
+    </p>
+
 
     <h4>stretch</h4>
     <p class="descricao-propriedade">
@@ -719,7 +857,7 @@
 
     <h4>center</h4>
     <p class="descricao-propriedade">
-        O valor center centraliza o conteudo em relaçaõ ao eixo principal. Funciona unicamente com a propriedade wrap. 
+        O valor center centraliza os elementos em relaçaõ ao eixo principal. Funciona unicamente com a propriedade wrap. 
     </p>
 
     <p>Exemplo:</p>
@@ -764,6 +902,16 @@
         <div class="contido"></div>
         <div class="contido"></div>
         <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
         
         
     </div>
@@ -782,6 +930,16 @@
         <div class="contido"></div>
         <div class="contido"></div>
         <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
         
         
     </div>
@@ -789,7 +947,7 @@
 
     <h4>space-between</h4>
     <p class="descricao-propriedade">
-        O valor space-between alinha os elementos com um espaço entre eles. Funciona unicamente com a propriedade wrap. 
+        O valor space-between alinha os elementos com um espaço entre as linhas, ou colunas. Funciona unicamente com a propriedade wrap. 
     </p>
 
     <p>Exemplo:</p>
@@ -815,11 +973,7 @@
         <div class="contido"></div>
         <div class="contido"></div>
         <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
+        
         
         
     </div>
@@ -827,17 +981,12 @@
     
     <h4>space-around</h4>
     <p class="descricao-propriedade">
-        O valor space-around alinha os elementos com um espaço no entorno dos elementos. Funciona unicamente com a propriedade wrap. 
+        O valor space-around alinha os elementos com um espaço no entorno das linhas ou colunas. Funciona unicamente com a propriedade wrap. 
     </p>
 
     <p>Exemplo:</p>
 
     <div class="conteiner display-flex align-content-space-around" style="flex-wrap: wrap;">
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
         <div class="contido"></div>
         <div class="contido"></div>
         <div class="contido"></div>
@@ -865,17 +1014,12 @@
     
     <h4>space-evenly</h4>
     <p class="descricao-propriedade">
-        O valor space-evenly alinha os elementos com um espaço igual no entorno dos elementos. Funciona unicamente com a propriedade wrap.  
+        O valor space-evenly alinha os elementos com um espaço igual no entorno das linhas ou colunas. Funciona unicamente com a propriedade wrap.  
     </p>
 
     <p>Exemplo:</p>
 
     <div class="conteiner display-flex align-content-space-evenly" style="flex-wrap: wrap;">
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
         <div class="contido"></div>
         <div class="contido"></div>
         <div class="contido"></div>

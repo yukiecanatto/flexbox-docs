@@ -53,13 +53,20 @@ p {
 }
 
 
-td, th {
+td, th, caption {
+    
+    
     font-size: 16pt;
+    color: #ffffff;
 }
 
 
 tr:nth-child(odd) {
-    background-color: #cecece;
+    background-color: #AE445A;
+}
+
+tr:nth-child(even) {
+    background-color: #662549;
 }
 
 

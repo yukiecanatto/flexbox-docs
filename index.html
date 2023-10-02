@@ -8,10 +8,113 @@
     <!-- Atalho: link:css NÃO ESQUECER DO './' ANTES DO STYLE, PARA LINKAR COM O ARQUIVO NA RAIZ DO PROJETO -->
     <link rel="stylesheet" href="./style.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
 
+
     <header id="topo-pagina">
+
+        <div class="navbar">
+            <a href="./index.html">Home</a>
+            <div class="subnav">
+              <button class="subnavbtn">Justify-content<i class="fa fa-caret-down"></i></button>
+              <div class="subnav-content">
+                <a href="#justify-content">justify-content</a>
+                <a href="#flex-start">flex-start</a>
+                <a href="#flex-end">flex-end</a>
+                <a href="#start">start</a>
+                <a href="#end">end</a>
+                <a href="#center">center</a>
+                <a href="#space-between">space-between</a>
+                <a href="#space-around">space-around</a>
+                <a href="#space-evenly">space-evenly</a>
+                <a href="#initial">initial</a>
+                <a href="#inherit">inherit</a>                
+              </div>
+            </div>
+
+            <div class="subnav">
+              <button class="subnavbtn">Flex-direction<i class="fa fa-caret-down"></i></button>
+              <div class="subnav-content">
+                <a href="#flex-direction">flex-direction</a>
+                <a href="#row">row</a>
+                <a href="#row-reverse">row-reverse</a>
+                <a href="#column">column</a>
+                <a href="#column-reverse">column-reverse</a>
+
+              </div>
+            </div>
+
+            <div class="subnav">
+              <button class="subnavbtn">Align-itens<i class="fa fa-caret-down"></i></button>
+              <div class="subnav-content">
+                <a href="#align-itens">align-itens</a>
+                <a href="#normal-stretch">normal e stretch</a>
+                <a href="#center">center</a>
+                <a href="#baseline">baseline</a>
+                <a href="#flex-start">flex-start</a>
+                <a href="#flex-end">flex-end</a>
+                <a href="#start">start</a>
+                <a href="#end">end</a>
+              </div>
+            </div>
+            
+            <div class="subnav">
+              <button class="subnavbtn">Flex-wrap<i class="fa fa-caret-down"></i></button>
+              <div class="subnav-content">
+                <a href="#flex-wrap">flex-wrap</a>
+                <a href="#nowrap">nowrap</a>
+                <a href="#wrap">wrap</a>
+                <a href="#wrap-reverse">wrap-reverse</a>
+              </div>
+            </div>
+            
+            <div class="subnav">
+              <button class="subnavbtn">Flex-flow<i class="fa fa-caret-down"></i></button>
+              <div class="subnav-content">
+                <a href="#flex-flow">flex-flow</a>
+                <a href="#flex-direction">flex-direction</a>
+                <a href="#flex-wrap">flex-wrap</a>
+              </div>
+            </div>
+
+            <div class="subnav">
+                <button class="subnavbtn">Align-content<i class="fa fa-caret-down"></i></button>
+                <div class="subnav-content">
+                  <a href="#align-content">align-content</a>
+                  <a href="#stretch">stretch</a>
+                  <a href="#align-content-center">center</a>
+                  <a href="#align-content-flex-start">flex-start</a>
+                  <a href="#align-content-flex-end">flex-end</a>
+                  <a href="#align-content-start">start</a>
+                  <a href="#start">start</a>
+                  <a href="#align-content-end">end</a>
+
+
+
+
+
+
+
+
+
+
+                  
+                </div>
+              </div>
+
+
+            <a href="#contact">Contact</a>
+          </div>
+
+
+
+
+
+
+
         <nav>
             
             <ul>
@@ -110,6 +213,7 @@
 
     <section id="justify-content">
         <h3>justify-content</h3>
+
         <p class="descricao-propriedade">
             A propriedade justify-content alinha e espaça os objetos contidos na div, de acordo com o eixo principal, que pode ser em linha ou coluna.
         </p>
@@ -164,208 +268,248 @@
         </table>
     </section>
     
-
-    <h4>flex-start</h4>
-    <p class="descricao-propriedade">
-        Valor padrão da justify-content para dispor os elementos ao início da flex-box de acordo com a flex-direction. No exemplo é demontrado o flex-start com row-reverce, que inverte o eixo.
-    </p>
-
-    <p>Exemplo:</p>
     
-    <div class="conteiner display-flex justify-content-flex-start" style="flex-direction: row-reverse; flex-wrap: wrap;">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-        <div class="contido">5</div>
-        <div class="contido">6</div>
-        <div class="contido">7</div>
-        <div class="contido">8</div>
-        <div class="contido">9</div>
-        <div class="contido">10</div>
-        <div class="contido">11</div>
-        <div class="contido">12</div>
-        <div class="contido">13</div>
-        <div class="contido">14</div>
-        <div class="contido">15</div>
+    <section id="flex-start">
+
+        <h4>flex-start</h4>
+        <p class="descricao-propriedade">
+            Valor padrão da justify-content para dispor os elementos ao início da flex-box de acordo com a flex-direction. No exemplo é demontrado o flex-start com row-reverce, que inverte o eixo.
+        </p>
+    
+        <p>Exemplo:</p>
         
-    </div>
+        <div class="conteiner display-flex justify-content-flex-start" style="flex-direction: row-reverse; flex-wrap: wrap;">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">3</div>
+            <div class="contido">4</div>
+            <div class="contido">5</div>
+            <div class="contido">6</div>
+            <div class="contido">7</div>
+            <div class="contido">8</div>
+            <div class="contido">9</div>
+            <div class="contido">10</div>
+            <div class="contido">11</div>
+            <div class="contido">12</div>
+            <div class="contido">13</div>
+            <div class="contido">14</div>
+            <div class="contido">15</div>
+            
+        </div>
+
+    </section>
 
 
-    <h4>flex-end</h4>
-    <p class="descricao-propriedade">
-        O flex-end dispõe os elementos ao final da flex-box de acordo com a flex-direction. No exemplo é demontrado o flex-end com row-reverce, que inverte o eixo.
-    </p>
+    <section id="flex-end">
 
-    <p>Exemplo:</p>
-
-    <div class="conteiner display-flex justify-content-flex-end" style="flex-direction: row-reverse; flex-wrap: wrap;">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-        <div class="contido">5</div>
-        <div class="contido">6</div>
-        <div class="contido">7</div>
-        <div class="contido">8</div>
-        <div class="contido">9</div>
-        <div class="contido">10</div>
-        <div class="contido">11</div>
-        <div class="contido">12</div>
-        <div class="contido">13</div>
-        <div class="contido">14</div>
-        <div class="contido">15</div>
-    </div>
-
-
-    <h4>start</h4>
-    <p class="descricao-propriedade">
-        Os itens contidos na div são dispostos ao início do conteiner. Mesmo a flex-direction em row-reverse, os lementos foram alinhados no inicio do conteiner.
+        <h4>flex-end</h4>
+        <p class="descricao-propriedade">
+            O flex-end dispõe os elementos ao final da flex-box de acordo com a flex-direction. No exemplo é demontrado o flex-end com row-reverce, que inverte o eixo.
+        </p>
     
-    </p>
-
-    <p>Exemplo:</p>
-
-    <div class="conteiner display-flex justify-content-start" style="flex-direction: row-reverse;">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-        <div class="contido">5</div>
-        <div class="contido">6</div>
-        <div class="contido">7</div>
-        <div class="contido">8</div>
-        <div class="contido">9</div>
-        <div class="contido">10</div>
-    </div>
-
-
-    <h4>end</h4>
-    <p class="descricao-propriedade">
-        Os itens contidos na div são dispostos ao final do conteiner. Mesmo a flex-direction em row-reverse, os elementos foram alinhados no final do conteiner.
+        <p>Exemplo:</p>
     
-    </p>
+        <div class="conteiner display-flex justify-content-flex-end" style="flex-direction: row-reverse; flex-wrap: wrap;">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">3</div>
+            <div class="contido">4</div>
+            <div class="contido">5</div>
+            <div class="contido">6</div>
+            <div class="contido">7</div>
+            <div class="contido">8</div>
+            <div class="contido">9</div>
+            <div class="contido">10</div>
+            <div class="contido">11</div>
+            <div class="contido">12</div>
+            <div class="contido">13</div>
+            <div class="contido">14</div>
+            <div class="contido">15</div>
+        </div>
 
-    <p>Exemplo:</p>
-
-    <div class="conteiner display-flex justify-content-end">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-        <div class="contido">5</div>
-        <div class="contido">6</div>
-        <div class="contido">7</div>
-        <div class="contido">8</div>
-        <div class="contido">9</div>
-        <div class="contido">10</div>
-    </div>
-
-
-    <h4>center</h4>
-    <p class="descricao-propriedade">
-        O valor center alinha o conteúdo ao centro do eixo primário.
-    </p>
-
-    <p>Exemplo:</p>
-    <div class="conteiner display-flex justify-content-center">
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-    </div>
+    </section>
 
 
-    <h4>space-between</h4>
-    <p class="descricao-propriedade">
-        Os itens contidos na div são dispostos com um espaço entre cada um deles. No caso os elementos contidos na div são exibidos com um espaço entre eles, mas não espaço da margem. Note que os quadrados das pontas estão praticamente colados nos cantos.
-    </p>
+    <section id="start">
 
-    <p>Exemplo:</p>
+        <h4>start</h4>
+        <p class="descricao-propriedade">
+            Os itens contidos na div são dispostos ao início do conteiner. Mesmo a flex-direction em row-reverse, os lementos foram alinhados no inicio do conteiner.
+        
+        </p>
+    
+        <p>Exemplo:</p>
+    
+        <div class="conteiner display-flex justify-content-start" style="flex-direction: row-reverse;">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">3</div>
+            <div class="contido">4</div>
+            <div class="contido">5</div>
+            <div class="contido">6</div>
+            <div class="contido">7</div>
+            <div class="contido">8</div>
+            <div class="contido">9</div>
+            <div class="contido">10</div>
+        </div>
 
-    <div class="conteiner display-flex justify-content-space-between">
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-    </div>
+    </section>
+
+
+    <section id="end">
+
+        <h4>end</h4>
+        <p class="descricao-propriedade">
+            Os itens contidos na div são dispostos ao final do conteiner. Mesmo a flex-direction em row-reverse, os elementos foram alinhados no final do conteiner.
+        
+        </p>
+    
+        <p>Exemplo:</p>
+    
+        <div class="conteiner display-flex justify-content-end">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">3</div>
+            <div class="contido">4</div>
+            <div class="contido">5</div>
+            <div class="contido">6</div>
+            <div class="contido">7</div>
+            <div class="contido">8</div>
+            <div class="contido">9</div>
+            <div class="contido">10</div>
+        </div>
+
+    </section>
+
+
+    <section id="center">
+        
+        <h4>center</h4>
+        <p class="descricao-propriedade">
+            O valor center alinha o conteúdo ao centro do eixo primário.
+        </p>
+    
+        <p>Exemplo:</p>
+        <div class="conteiner display-flex justify-content-center">
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+        </div>
+
+    </section>
+
+
+    <section id="space-between">
+
+        <h4>space-between</h4>
+        <p class="descricao-propriedade">
+            Os itens contidos na div são dispostos com um espaço entre cada um deles. No caso os elementos contidos na div são exibidos com um espaço entre eles, mas não espaço da margem. Note que os quadrados das pontas estão praticamente colados nos cantos.
+        </p>
+    
+        <p>Exemplo:</p>
+    
+        <div class="conteiner display-flex justify-content-space-between">
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+        </div>
+
+    </section>
       
     
-    <h4>space-around</h4>
-    <p class="descricao-propriedade">
-        Os itens contidos na div são dispostos de maneira semelhante à propriedade space-between, porém com o diferêncial do espaço entre os elementos ser no total entorno dele. Diferênte de space-between que não espaça os objetos da margem, space-around garante o espaço antes e depois de cada elemento, ou seja haverá um espaços entre os quadradinhos, mas com as pontas descoladas da margem.
-    </p>
-
-    <p>Exemplo:</p>
-
-    <div class="conteiner display-flex justify-content-space-around">
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-    </div>
+    <section id="space-around">
+        
+        <h4>space-around</h4>
+        <p class="descricao-propriedade">
+            Os itens contidos na div são dispostos de maneira semelhante à propriedade space-between, porém com o diferêncial do espaço entre os elementos ser no total entorno dele. Diferênte de space-between que não espaça os objetos da margem, space-around garante o espaço antes e depois de cada elemento, ou seja haverá um espaços entre os quadradinhos, mas com as pontas descoladas da margem.
+        </p>
     
+        <p>Exemplo:</p>
     
-    <h4>space-evenly</h4>
-    <p class="descricao-propriedade">
-        Essa propriedade é o aprimoramento das outras duas anteriores por assim dizer. Pois dispões os elementos dentro da div espaçados de maneira igual, o mesmo espaço entre cada item, será o mesmo o espaço entre as pontas e margem.
-    </p>
+        <div class="conteiner display-flex justify-content-space-around">
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+        </div>
 
-    <p>Exemplo:</p>
+    </section>
 
-    <div class="conteiner display-flex justify-content-space-evenly">
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-    </div>
+    
+    <section id="space-evenly">
+        
+        <h4>space-evenly</h4>
+        <p class="descricao-propriedade">
+            Essa propriedade é o aprimoramento das outras duas anteriores por assim dizer. Pois dispões os elementos dentro da div espaçados de maneira igual, o mesmo espaço entre cada item, será o mesmo o espaço entre as pontas e margem.
+        </p>
+    
+        <p>Exemplo:</p>
+    
+        <div class="conteiner display-flex justify-content-space-evenly">
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+        </div>
 
-
-    <h4>initial</h4>
-    <p class="descricao-propriedade">
-        A propriedade initial aponta ao default da propriedade, no caso flex-start, o qual no exemplo a seguir, segue o default row e initial.
-    </p>
-
-    <p>Exemplo:</p>
-
-    <div class="conteiner display-flex justify-content-initial">
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-    </div>
+    </section>
 
 
-    <h4>inherit</h4>
-    <p class="descricao-propriedade">
-        Os elementos contidos na div herdarão as características da sua classe pai. No caso o flex-end na linha principal, e o flex-end herdado pela pequena linha apertada no último quadradinho.
-    </p>
+    <section id="initial">
 
-    <p>Exemplo:</p>
+        <h4>initial</h4>
+        <p class="descricao-propriedade">
+            A propriedade initial aponta ao default da propriedade, no caso flex-start, o qual no exemplo a seguir, segue o default row e initial.
+        </p>
+    
+        <p>Exemplo:</p>
+    
+        <div class="conteiner display-flex justify-content-initial">
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+        </div>
 
-    <div class="conteiner display-flex justify-content-flex-end">
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-         
-        <div class="contido display-flex" style="flex-wrap: nowrap;">
-            <div class="contido justify-content-inherit" style="height:30px; width: 30px;"></div>
-            <div class="contido justify-content-inherit" style="height:30px; width: 30px;"></div>
-            <div class="contido justify-content-inherit" style="height:30px; width: 30px;"></div>
-            <div class="contido justify-content-inherit" style="height:30px; width: 30px;"></div>
-            <div class="contido justify-content-inherit" style="height:30px; width: 30px;"></div>
-            
+    </section>
 
-        </div>       
 
-    </div>
+    <section id="inherit">
+
+        <h4>inherit</h4>
+        <p class="descricao-propriedade">
+            Os elementos contidos na div herdarão as características da sua classe pai. No caso o flex-end na linha principal, e o flex-end herdado pela pequena linha apertada no último quadradinho.
+        </p>
+    
+        <p>Exemplo:</p>
+    
+        <div class="conteiner display-flex justify-content-flex-end">
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+             
+            <div class="contido display-flex" style="flex-wrap: nowrap;">
+                <div class="contido justify-content-inherit" style="height:30px; width: 30px;"></div>
+                <div class="contido justify-content-inherit" style="height:30px; width: 30px;"></div>
+                <div class="contido justify-content-inherit" style="height:30px; width: 30px;"></div>
+                <div class="contido justify-content-inherit" style="height:30px; width: 30px;"></div>
+                <div class="contido justify-content-inherit" style="height:30px; width: 30px;"></div>
+                
+    
+            </div>       
+    
+        </div>
+
+    </section>
 
     
 
@@ -416,68 +560,84 @@
     </section>
 
 
-    <h4>row</h4>
-    <p class="descricao-popriedade">
-        Valor padrão da flex-direction, dispondo os elementos em linha da esquerda para a direita.
-    </p>
+    <section id="row">
+        
+        <h4>row</h4>
+        <p class="descricao-popriedade">
+            Valor padrão da flex-direction, dispondo os elementos em linha da esquerda para a direita.
+        </p>
+    
+        <p>Exemplo:</p>
+    
+        <div class="conteiner display-flex flex-direction-row">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">3</div>
+            <div class="contido">4</div>
+            <div class="contido">5</div>
+        </div>
 
-    <p>Exemplo:</p>
-
-    <div class="conteiner display-flex flex-direction-row">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-        <div class="contido">5</div>
-    </div>
+    </section>
 
 
-    <h4>row-reverse</h4>
-    <p class="descricao-propriedade">
-        Valor que inverte o eixo da linha, dispondo os elementos da direita para a esquerda.
-    </p>
+    <section id="row-reverce">
 
-    <p>Exemplo:</p>
+        <h4>row-reverse</h4>
+        <p class="descricao-propriedade">
+            Valor que inverte o eixo da linha, dispondo os elementos da direita para a esquerda.
+        </p>
+    
+        <p>Exemplo:</p>
+    
+        <div class="conteiner display-flex flex-direction-row-reverse">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">3</div>
+            <div class="contido">4</div>
+            <div class="contido">5</div>
+        </div>
 
-    <div class="conteiner display-flex flex-direction-row-reverse">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-        <div class="contido">5</div>
-    </div>
+    </section>
     
     
-    <h4>column</h4>
-    <p class="descricao-propriedade">
-        O valor column alinha os elementos contidos na div em coluna.
-    </p>
+    <section id="column">
 
-    <p>Exemplo:</p>
+        <h4>column</h4>
+        <p class="descricao-propriedade">
+            O valor column alinha os elementos contidos na div em coluna.
+        </p>
+    
+        <p>Exemplo:</p>
+    
+        <div class="conteiner display-flex flex-direction-column">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">3</div>
+            <div class="contido">4</div>
+            <div class="contido">5</div>
+        </div>
 
-    <div class="conteiner display-flex flex-direction-column">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-        <div class="contido">5</div>
-    </div>
+    </section>
     
     
-    <h4>column-reverse</h4>
-    <p class="descricao-propriedade">
-        O valor column-reverse também alinha os elementos contidos na div em coluna, porém invertendo o eixo.
-    </p>
+    <section id="column-reverse">
 
-    <p>Exemplo:</p>
+        <h4>column-reverse</h4>
+        <p class="descricao-propriedade">
+            O valor column-reverse também alinha os elementos contidos na div em coluna, porém invertendo o eixo.
+        </p>
+    
+        <p>Exemplo:</p>
+    
+        <div class="conteiner display-flex flex-direction-column-reverse">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">3</div>
+            <div class="contido">4</div>
+            <div class="contido">5</div>
+        </div>
 
-    <div class="conteiner display-flex flex-direction-column-reverse">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-        <div class="contido">5</div>
-    </div>
+    </section>
     
     
     
@@ -543,126 +703,156 @@
         </table>
     </section>
 
-    
-    <h4>normal e stretch</h4>
-    <p class="descricao-propriedade">
-        Ambas as propriedades agem da mesma forma em relação aos elementos contidos na div, esticando-os elementos para ocupar todo o espaço do conteiner. 
-    </p>
 
-    <p>Exemplo:</p>
-
-    <div class="conteiner display-flex">
-        <div class="contido align-items-stretch"></div>
-        <div class="contido align-items-stretch"></div>
-        <div class="contido align-items-stretch"></div>
-        <div class="contido align-items-stretch"></div>
-        <div class="contido align-items-stretch"></div>
-    </div>
-    
-    
-    <h4>center</h4>
-    <p class="descricao-propriedade">
-        Os elementos são alinhados ao centro.
-    </p>
-
-    <p>Exemplo:</p>
-
-    <div class="conteiner display-flex align-items-center">
-        <div class="contido" style="height: 25px;"></div>
-        <div class="contido" style="height: 50px;"></div>
-        <div class="contido" style="height: 100px;"></div>
-        <div class="contido" style="height: 150px;"></div>
-        <div class="contido" style="height: 200px;"></div>
+    <section id="normal-stretch">
         
-    </div>
+        <h4>normal e stretch</h4>
+        <p class="descricao-propriedade">
+            Ambas as propriedades agem da mesma forma em relação aos elementos contidos na div, esticando-os elementos para ocupar todo o espaço do conteiner. 
+        </p>
+    
+        <p>Exemplo:</p>
+    
+        <div class="conteiner display-flex">
+            <div class="contido align-items-stretch"></div>
+            <div class="contido align-items-stretch"></div>
+            <div class="contido align-items-stretch"></div>
+            <div class="contido align-items-stretch"></div>
+            <div class="contido align-items-stretch"></div>
+        </div>
 
-
-    <h4>baseline</h4>
-    <p class="descricao-propriedade">
-        Os elementos são alinhados sobre a linha central no conteiner. 
-    </p>
-
-    <p>Exemplo:</p>
-
-    <div class="conteiner display-flex align-items-baseline">
-        <div class="contido" style="height: 25px;"></div>
-        <div class="contido" style="height: 50px;"></div>
-        <div class="contido" style="height: 100px;"></div>
-        <div class="contido" style="height: 150px;"></div>
-        <div class="contido" style="height: 200px;"></div>
-        
-        
-    </div>
+    </section>
     
     
-    <h4>flex-start</h4>
-    <p class="descricao-propriedade">
-        Os elementos são alinhados ao início da flex-box, obedecendo ao sentido da flex-box com a flex-direction. No caso com row-reverce.
-    </p>
+    <section id="center">
 
-    <p>Exemplo:</p>
-
-    <div class="conteiner display-flex align-items-flex-start" style="flex-direction: row-reverse;">
-        <div class="contido" style="height: 25px;"></div>
-        <div class="contido" style="height: 50px;"></div>
-        <div class="contido" style="height: 100px;"></div>
-        <div class="contido" style="height: 150px;"></div>
-        <div class="contido" style="height: 200px;"></div>
+        <h4>center</h4>
+        <p class="descricao-propriedade">
+            Os elementos são alinhados ao centro.
+        </p>
+    
+        <p>Exemplo:</p>
+    
+        <div class="conteiner display-flex align-items-center">
+            <div class="contido" style="height: 25px;"></div>
+            <div class="contido" style="height: 50px;"></div>
+            <div class="contido" style="height: 100px;"></div>
+            <div class="contido" style="height: 150px;"></div>
+            <div class="contido" style="height: 200px;"></div>
+            
+        </div>
         
-    </div>
+    </section>
+
+
+    <section id="baseline">
+
+        <h4>baseline</h4>
+        <p class="descricao-propriedade">
+            Os elementos são alinhados sobre a linha central no conteiner. 
+        </p>
+    
+        <p>Exemplo:</p>
+    
+        <div class="conteiner display-flex align-items-baseline">
+            <div class="contido" style="height: 25px;"></div>
+            <div class="contido" style="height: 50px;"></div>
+            <div class="contido" style="height: 100px;"></div>
+            <div class="contido" style="height: 150px;"></div>
+            <div class="contido" style="height: 200px;"></div>
+            
+            
+        </div>
+        
+    </section>
+
+
+    
+    <section id="flex-start">
+
+        <h4>flex-start</h4>
+        <p class="descricao-propriedade">
+            Os elementos são alinhados ao início da flex-box, obedecendo ao sentido da flex-box com a flex-direction. No caso com row-reverce.
+        </p>
+    
+        <p>Exemplo:</p>
+    
+        <div class="conteiner display-flex align-items-flex-start" style="flex-direction: row-reverse;">
+            <div class="contido" style="height: 25px;"></div>
+            <div class="contido" style="height: 50px;"></div>
+            <div class="contido" style="height: 100px;"></div>
+            <div class="contido" style="height: 150px;"></div>
+            <div class="contido" style="height: 200px;"></div>
+            
+        </div>
+        
+
+    </section>
+
+
+    <section id="flex-end">
+
+        <h4>flex-end</h4>
+        <p class="descricao-propriedade">
+            Os elementos são alinhados ao final da flex-box, obedecendo ao sentido da flex-box com a flex-direction. No caso com row-reverce.
+        </p>
+    
+        <p>Exemplo:</p>
+    
+        <div class="conteiner display-flex align-items-flex-end" style="flex-direction: row-reverse;">
+            <div class="contido" style="height: 25px;"></div>
+            <div class="contido" style="height: 50px;"></div>
+            <div class="contido" style="height: 100px;"></div>
+            <div class="contido" style="height: 150px;"></div>
+            <div class="contido" style="height: 200px;"></div>
+            
+        </div>
+
+    </section>
+
+    
+    <section id="start">
+
+        <h4>start</h4>
+        <p class="descricao-propriedade">
+            Os elementos são alinhados ao inicio do conteiner. 
+        </p>
+    
+        <p>Exemplo:</p>
+    
+        <div class="conteiner display-flex align-items-start">
+            <div class="contido" style="height: 25px;"></div>
+            <div class="contido" style="height: 50px;"></div>
+            <div class="contido" style="height: 100px;"></div>
+            <div class="contido" style="height: 150px;"></div>
+            <div class="contido" style="height: 200px;"></div>
+            
+            
+        </div>
+
+    </section>
     
     
-    <h4>flex-end</h4>
-    <p class="descricao-propriedade">
-        Os elementos são alinhados ao final da flex-box, obedecendo ao sentido da flex-box com a flex-direction. No caso com row-reverce.
-    </p>
+    <section id="end">
 
-    <p>Exemplo:</p>
-
-    <div class="conteiner display-flex align-items-flex-end" style="flex-direction: row-reverse;">
-        <div class="contido" style="height: 25px;"></div>
-        <div class="contido" style="height: 50px;"></div>
-        <div class="contido" style="height: 100px;"></div>
-        <div class="contido" style="height: 150px;"></div>
-        <div class="contido" style="height: 200px;"></div>
-        
-    </div>
+        <h4>end</h4>
+        <p class="descricao-propriedade">
+            Os elementos são alinhados ao final do conteiner. 
+        </p>
     
+        <p>Exemplo:</p>
     
-    <h4>start</h4>
-    <p class="descricao-propriedade">
-        Os elementos são alinhados ao inicio do conteiner. 
-    </p>
+        <div class="conteiner display-flex align-items-end">
+            <div class="contido" style="height: 25px;"></div>
+            <div class="contido" style="height: 50px;"></div>
+            <div class="contido" style="height: 100px;"></div>
+            <div class="contido" style="height: 150px;"></div>
+            <div class="contido" style="height: 200px;"></div>
+            
+            
+        </div>
 
-    <p>Exemplo:</p>
-
-    <div class="conteiner display-flex align-items-start">
-        <div class="contido" style="height: 25px;"></div>
-        <div class="contido" style="height: 50px;"></div>
-        <div class="contido" style="height: 100px;"></div>
-        <div class="contido" style="height: 150px;"></div>
-        <div class="contido" style="height: 200px;"></div>
-        
-        
-    </div>
-    
-    
-    <h4>end</h4>
-    <p class="descricao-propriedade">
-        Os elementos são alinhados ao final do conteiner. 
-    </p>
-
-    <p>Exemplo:</p>
-
-    <div class="conteiner display-flex align-items-end">
-        <div class="contido" style="height: 25px;"></div>
-        <div class="contido" style="height: 50px;"></div>
-        <div class="contido" style="height: 100px;"></div>
-        <div class="contido" style="height: 150px;"></div>
-        <div class="contido" style="height: 200px;"></div>
-        
-        
-    </div>
+    </section>
 
     
 
@@ -707,89 +897,102 @@
     </section>
 
 
-    <h4>nowrap</h4>
-    <p class="descricao-propriedade">
-        Valor padrão e que não permite que os elementos contidos na div uma vez atingido o limite do conteiner, não quebrará a linha ou coluna, e espremerá os elementos contidos.
-    </p>
+    <section id="nowrap">
 
-    <p>Exemplo:</p>
+        <h4>nowrap</h4>
+        <p class="descricao-propriedade">
+            Valor padrão e que não permite que os elementos contidos na div uma vez atingido o limite do conteiner, não quebrará a linha ou coluna, e espremerá os elementos contidos.
+        </p>
+    
+        <p>Exemplo:</p>
+    
+        <div class="conteiner display-flex flex-wrap-nowrap">
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+            
+            
+        </div>
 
-    <div class="conteiner display-flex flex-wrap-nowrap">
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        
-        
-    </div>
+    </section>
     
     
-    <h4>wrap</h4>
-    <p class="descricao-propriedade">
-        O valor wrap agrupa os elementos contido na div, quebrando a linha quando necessário ao atingir o limite do conteiner. 
-    </p>
+    <section id="wrap">
 
-    <p>Exemplo:</p>
+        <h4>wrap</h4>
+        <p class="descricao-propriedade">
+            O valor wrap agrupa os elementos contido na div, quebrando a linha quando necessário ao atingir o limite do conteiner. 
+        </p>
+    
+        <p>Exemplo:</p>
+    
+        <div class="conteiner display-flex flex-wrap-wrap">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">3</div>
+            <div class="contido">4</div>
+            <div class="contido">5</div>
+            <div class="contido">6</div>
+            <div class="contido">7</div>
+            <div class="contido">8</div>
+            <div class="contido">9</div>
+            <div class="contido">10</div>
+            <div class="contido">11</div>
+            <div class="contido">12</div>
+            <div class="contido">13</div>
+            <div class="contido">14</div>
+            <div class="contido">15</div>      
+            
+        </div>
 
-    <div class="conteiner display-flex flex-wrap-wrap">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-        <div class="contido">5</div>
-        <div class="contido">6</div>
-        <div class="contido">7</div>
-        <div class="contido">8</div>
-        <div class="contido">9</div>
-        <div class="contido">10</div>
-        <div class="contido">11</div>
-        <div class="contido">12</div>
-        <div class="contido">13</div>
-        <div class="contido">14</div>
-        <div class="contido">15</div>      
-        
-    </div>
+    </section>
     
     
-    <h4>wrap-reverse</h4>
-    <p class="descricao-propriedade">
-        O valor wrap-reverse agrupa os elementos contido na div em ordem reversa, também quebrando a linha quando necessário . 
-    </p>
+    <section id="wrap-reverse">
 
-    <div class="conteiner display-flex flex-wrap-wrap-reverse">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-        <div class="contido">5</div>
-        <div class="contido">6</div>
-        <div class="contido">7</div>
-        <div class="contido">8</div>
-        <div class="contido">9</div>
-        <div class="contido">10</div>
-        <div class="contido">11</div>
-        <div class="contido">12</div>
-        <div class="contido">13</div>
-        <div class="contido">14</div>
-        <div class="contido">15</div>      
-        
-    </div>
+        <h4>wrap-reverse</h4>
+        <p class="descricao-propriedade">
+            O valor wrap-reverse agrupa os elementos contido na div em ordem reversa, também quebrando a linha quando necessário . 
+        </p>
+    
+        <div class="conteiner display-flex flex-wrap-wrap-reverse">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">3</div>
+            <div class="contido">4</div>
+            <div class="contido">5</div>
+            <div class="contido">6</div>
+            <div class="contido">7</div>
+            <div class="contido">8</div>
+            <div class="contido">9</div>
+            <div class="contido">10</div>
+            <div class="contido">11</div>
+            <div class="contido">12</div>
+            <div class="contido">13</div>
+            <div class="contido">14</div>
+            <div class="contido">15</div>      
+            
+        </div>
+
+    </section>
+
 
 
     <!-- flex-flow -->
@@ -941,68 +1144,175 @@
     </section>
 
 
-    <h4>stretch</h4>
-    <p class="descricao-propriedade">
-        O valor stretch nesta propriedade esticará os elementos até o fim do conteiner. 
-    </p>
+    <section id="stretch">
 
-    <p>Exemplo:</p>
-
-    <div class="conteiner display-flex align-content-stretch">
-        <div class="contido" style="height: auto;"></div>
-        <div class="contido" style="height: auto;"></div>
-        <div class="contido" style="height: auto;"></div>
-        <div class="contido" style="height: auto;"></div>
-        <div class="contido" style="height: auto;"></div>
+        <h4>stretch</h4>
+        <p class="descricao-propriedade">
+            O valor stretch nesta propriedade esticará os elementos até o fim do conteiner. 
+        </p>
+    
+        <p>Exemplo:</p>
+    
+        <div class="conteiner display-flex align-content-stretch">
+            <div class="contido" style="height: auto;"></div>
+            <div class="contido" style="height: auto;"></div>
+            <div class="contido" style="height: auto;"></div>
+            <div class="contido" style="height: auto;"></div>
+            <div class="contido" style="height: auto;"></div>
+                
             
-        
-    </div>
+        </div>
+
+    </section>
 
 
+    <section id="align-content-center">
 
-    <h4>center</h4>
-    <p class="descricao-propriedade">
-        O valor center centraliza os elementos em relaçaõ ao eixo principal. Funciona unicamente com a propriedade wrap. 
-    </p>
-
-    <p>Exemplo:</p>
-
-    <div class="conteiner display-flex align-content-center" style="flex-wrap: wrap;">
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        
-        
-        
-    </div>
-
-
-    <h4>flex-start</h4>
-    <p class="descricao-propriedade">
-        O valor flex-start alinha os elementos no inicio da flex-box, baseada no sentido da flex-box. Funciona unicamente com a propriedade wrap. 
-    </p>
-
-    <p>Exemplo:</p>
-
-    <div class="conteiner display-flex align-content-flex-start" style="flex-wrap: wrap; flex-direction: row-reverse;">
+        <h4>center</h4>
+        <p class="descricao-propriedade">
+            O valor center centraliza os elementos em relaçaõ ao eixo principal. Funciona unicamente com a propriedade wrap. 
+        </p>
+    
+        <p>Exemplo:</p>
+    
+        <div class="conteiner display-flex align-content-center" style="flex-wrap: wrap;">
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
+            <div class="contido"></div>
             
+            
+            
+        </div>
+
+    </section>
+
+
+
+    <section id="align-content-flex-start">
+
+        <h4>flex-start</h4>
+        <p class="descricao-propriedade">
+            O valor flex-start alinha os elementos no inicio da flex-box, baseada no sentido da flex-box. Funciona unicamente com a propriedade wrap. 
+        </p>
+    
+        <p>Exemplo:</p>
+    
+        <div class="conteiner display-flex align-content-flex-start" style="flex-wrap: wrap; flex-direction: row-reverse;">
+                
+                <div class="contido">1</div>
+                <div class="contido">2</div>
+                <div class="contido">3</div>
+                <div class="contido">4</div>
+                <div class="contido">5</div>
+                <div class="contido">6</div>
+                <div class="contido">7</div>
+                <div class="contido">8</div>
+                <div class="contido">9</div>
+                <div class="contido">10</div>
+                <div class="contido">11</div>
+                <div class="contido">12</div>
+                <div class="contido">13</div>
+                <div class="contido">14</div>
+                <div class="contido">15</div>
+            
+            
+        </div>
+
+    </section>
+    
+    
+    <section id="align-content-flex-end">
+
+        <h4>flex-end</h4>
+        <p class="descricao-propriedade">
+            O valor flex-end alinha os elementos no final da flex box, baseada no sentido da flex-box. Funciona unicamente com a propriedade wrap. 
+        </p>
+    
+        <p>Exemplo:</p>
+    
+        <div class="conteiner display-flex align-content-flex-end" style="flex-wrap: wrap; flex-direction: row-reverse;">
+                <div class="contido">1</div>
+                <div class="contido">2</div>
+                <div class="contido">3</div>
+                <div class="contido">4</div>
+                <div class="contido">5</div>
+                <div class="contido">6</div>
+                <div class="contido">7</div>
+                <div class="contido">8</div>
+                <div class="contido">9</div>
+                <div class="contido">10</div>
+                <div class="contido">11</div>
+                <div class="contido">12</div>
+                <div class="contido">13</div>
+                <div class="contido">14</div>
+                <div class="contido">15</div>
+            
+            
+        </div>
+
+    </section>
+
+
+
+    <section id="align-content-start">
+
+        <h4>start</h4>
+        <p class="descricao-propriedade">
+            O valor start alinha os elementos no inicio do conteiner. Funciona unicamente com a propriedade wrap. 
+        </p>
+    
+        <p>Exemplo:</p>
+    
+        <div class="conteiner display-flex align-content-start" style="flex-wrap: wrap;">
+            <div class="contido">1</div>
+            <div class="contido">2</div>
+            <div class="contido">3</div>
+            <div class="contido">4</div>
+            <div class="contido">5</div>
+            <div class="contido">6</div>
+            <div class="contido">7</div>
+            <div class="contido">8</div>
+            <div class="contido">9</div>
+            <div class="contido">10</div>
+            <div class="contido">11</div>
+            <div class="contido">12</div>
+            <div class="contido">13</div>
+            <div class="contido">14</div>
+            <div class="contido">15</div> 
+            
+            
+        </div>
+
+    </section>
+    
+    
+    <section id="align-content-end">
+
+        <h4>end</h4>
+        <p class="descricao-propriedade">
+            O valor start alinha os elementos no final do conteiner. Funciona unicamente com a propriedade wrap. 
+        </p>
+    
+        <p>Exemplo:</p>
+    
+        <div class="conteiner display-flex align-content-end" style="flex-wrap: wrap;">
             <div class="contido">1</div>
             <div class="contido">2</div>
             <div class="contido">3</div>
@@ -1018,93 +1328,33 @@
             <div class="contido">13</div>
             <div class="contido">14</div>
             <div class="contido">15</div>
-        
-        
-    </div>
-    
-    
-    <h4>flex-end</h4>
-    <p class="descricao-propriedade">
-        O valor flex-end alinha os elementos no final da flex box, baseada no sentido da flex-box. Funciona unicamente com a propriedade wrap. 
-    </p>
+            
+            
+        </div>
 
-    <p>Exemplo:</p>
-
-    <div class="conteiner display-flex align-content-flex-end" style="flex-wrap: wrap; flex-direction: row-reverse;">
-            <div class="contido">1</div>
-            <div class="contido">2</div>
-            <div class="contido">3</div>
-            <div class="contido">4</div>
-            <div class="contido">5</div>
-            <div class="contido">6</div>
-            <div class="contido">7</div>
-            <div class="contido">8</div>
-            <div class="contido">9</div>
-            <div class="contido">10</div>
-            <div class="contido">11</div>
-            <div class="contido">12</div>
-            <div class="contido">13</div>
-            <div class="contido">14</div>
-            <div class="contido">15</div>
-        
-        
-    </div>
+    </section>
 
 
-    <h4>start</h4>
-    <p class="descricao-propriedade">
-        O valor start alinha os elementos no inicio do conteiner. Funciona unicamente com a propriedade wrap. 
-    </p>
 
-    <p>Exemplo:</p>
 
-    <div class="conteiner display-flex align-content-start" style="flex-wrap: wrap;">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-        <div class="contido">5</div>
-        <div class="contido">6</div>
-        <div class="contido">7</div>
-        <div class="contido">8</div>
-        <div class="contido">9</div>
-        <div class="contido">10</div>
-        <div class="contido">11</div>
-        <div class="contido">12</div>
-        <div class="contido">13</div>
-        <div class="contido">14</div>
-        <div class="contido">15</div> 
-        
-        
-    </div>
-    
-    
-    <h4>end</h4>
-    <p class="descricao-propriedade">
-        O valor start alinha os elementos no final do conteiner. Funciona unicamente com a propriedade wrap. 
-    </p>
 
-    <p>Exemplo:</p>
 
-    <div class="conteiner display-flex align-content-end" style="flex-wrap: wrap;">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-        <div class="contido">5</div>
-        <div class="contido">6</div>
-        <div class="contido">7</div>
-        <div class="contido">8</div>
-        <div class="contido">9</div>
-        <div class="contido">10</div>
-        <div class="contido">11</div>
-        <div class="contido">12</div>
-        <div class="contido">13</div>
-        <div class="contido">14</div>
-        <div class="contido">15</div>
-        
-        
-    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <h4>space-between</h4>

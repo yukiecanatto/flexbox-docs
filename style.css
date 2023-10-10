@@ -6,17 +6,20 @@
     font-size: initial;
     font-weight: initial;
     text-align: initial;
-
+    
 }
+
+/* após o Mini Reset '*' Estilos definidos para a página de documentação  */
+
 
 
 /* menu de navegação  */
 .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: #AE445A;
   }
   
-  /* Navigation links */
+  /* links de navegação */
   .navbar a {
     float: left;
     font-size: 16px;
@@ -26,13 +29,13 @@
     text-decoration: none;
   }
   
-  /* The subnavigation menu */
+  /* menu de subnavegação */
   .subnav {
     float: left;
     overflow: hidden;
   }
   
-  /* Subnav button */
+  /* botões de subnavegação */
   .subnav .subnavbtn {
     font-size: 16px;
     border: none;
@@ -44,9 +47,9 @@
     margin: 0;
   }
   
-  /* Add a red background color to navigation links on hover */
+  /* cor da subnavegação hover */
   .navbar a:hover, .subnav:hover .subnavbtn {
-    background-color: red;
+    background-color: #662549;
   }
   
   /* Style the subnav content - positioned absolute */
@@ -54,7 +57,7 @@
     display: none;
     position: absolute;
     left: 0;
-    background-color: red;
+    background-color: #662549;
     width: 100%;
     z-index: 1;
   }
@@ -68,7 +71,7 @@
   
   /* Add a grey background color on hover */
   .subnav-content a:hover {
-    background-color: #eee;
+    background-color: #F39F5A;
     color: black;
   }
   
@@ -78,36 +81,14 @@
   }
 
 
-
-
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  .rodape {
+    margin-top: 150px;
     overflow: hidden;
     background-color: #AE445A;
   }
 
-li {
-    float: left;
-
-}
-
-li a {
-    display: block;
-    color: white;
-    padding: 10px 15px;
-    text-decoration: none;
-  }
 
 
-  li a:hover {
-    background-color: #662549;
-  }
-
-
-/* após o Mini Reset '*' Estilos definidos para a página de documentação  */
 
 body {
     width: 90%;
